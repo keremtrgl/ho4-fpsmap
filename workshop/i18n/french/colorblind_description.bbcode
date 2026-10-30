@@ -1,0 +1,52 @@
+[h1]FPS Map – Extension daltonisme[/h1]
+
+[b]Une extension optionnelle pour [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440]FPS Map – Updated for 1.19[/url] qui rend les flèches de plan d'armée et chaque indicateur rouge/vert lisibles en protanopie, deutéranopie et tritanopie.[/b]
+
+[hr][/hr]
+
+[h2]1. Flèches de plan d'armée[/h2]
+Hearts of Iron IV colore les lignes de front et offensives de chaque armée à partir d'une liste fixe construite par décalages de teinte — précisément ce que le daltonisme rouge-vert ne perçoit pas. Pour un deutéranope, deux de vos 16 premières armées sont quasi identiques (écart CIEDE2000 de 0,9 ; on perçoit une différence à partir d'environ 2).
+
+[list]
+[*]Commence par la palette [b]Okabe-Ito[/b], adaptée au daltonisme.
+[*]Chaque couleur suivante est choisie pour rester aussi éloignée que possible de toutes les précédentes en [b]vision normale et sous les trois déficiences simulées[/b] (simulation Machado 2009, distance CIEDE2000).
+[*]Le jeu attribue les couleurs dans l'ordre : vos premières armées reçoivent les plus distinctes.
+[/list]
+
+[table]
+[tr][th]Écart minimal, 16 premières armées[/th][th]Standard[/th][th]Extension[/th][/tr]
+[tr][td]Vision normale[/td][td]5,8[/td][td]11,8[/td][/tr]
+[tr][td]Protanopie[/td][td]1,8[/td][td]9,3[/td][/tr]
+[tr][td]Deutéranopie[/td][td]0,9[/td][td]9,8[/td][/tr]
+[tr][td]Tritanopie[/td][td]2,7[/td][td]10,7[/td][/tr]
+[/table]
+
+[h2]2. Indicateurs rouge / vert → bleu / orange[/h2]
+Neuf paires d'indicateurs bon/mauvais et la barre de score de guerre indiquent « bon » ou « mauvais » en vert et rouge. Elles utilisent désormais la paire bleu/orange d'Okabe-Ito ; luminosité, détails et images inchangés.
+[list]
+[*]Barre de combat terrestre (attaquant / défenseur)
+[*]Barre de combat naval (gagne / perd)
+[*]Supériorité aérienne et contrôle des régions navales (bon / mauvais)
+[*]Mines navales, flèches de domination navale sur la carte
+[*]Progression des décisions sur la carte
+[*]Progression de la capitulation, score de guerre
+[*]Lignes de production (actives / ressources manquantes)
+[/list]
+
+[table]
+[tr][th]Pire paire d'indicateurs[/th][th]Standard[/th][th]Extension[/th][/tr]
+[tr][td]Vision normale[/td][td]21,4[/td][td]25,1[/td][/tr]
+[tr][td]Protanopie[/td][td]12,0[/td][td]23,1[/td][/tr]
+[tr][td]Deutéranopie[/td][td]3,4[/td][td]27,7[/td][/tr]
+[tr][td]Tritanopie[/td][td]34,3[/td][td]28,9[/td][/tr]
+[/table]
+Le pire cas en deutéranopie était les flèches de domination navale (3,4 — presque identiques) ; chaque paire dépasse désormais 23.
+
+[h2]Installation[/h2]
+[olist]
+[*]Abonnez-vous à [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440]FPS Map – Updated for 1.19[/url] (requis).
+[*]Abonnez-vous à cette extension et activez les deux — le launcher la charge automatiquement après FPS Map.
+[/olist]
+
+[h2]Compatibilité[/h2]
+Purement visuel : [b]compatible Ironman et multijoueur[/b] (checksum inchangé, vérifié en jeu), ajout ou retrait à tout moment. Compatible avec Millennium Dawn.

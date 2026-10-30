@@ -1,0 +1,88 @@
+[h1]FPS Map — Atualizado para 1.19 (compatível com Ironman e multijogador)[/h1]
+
+[b]Um mapa mais limpo, nítido e leve — reconstruído do zero para Hearts of Iron IV 1.19.x e todas as DLCs até Thunder at Our Gates.[/b]
+
+Esta é a continuação mantida do querido [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map do Mlecz[/url]. O original parou de ser atualizado enquanto o jogo continuava mudando: shaders desatualizados, tipos de seta ausentes e texturas inválidas causavam travamentos, linhas de QG invisíveis e setas de plano quebradas. Esta versão mantém exatamente o visual que você conhece e conserta tudo por baixo.
+
+[hr][/hr]
+
+[h2]✔ O que faz[/h2]
+[list]
+[*][b]Água sem reflexo[/b] — reflexos do céu removidos; mares mais escuros e calmos que destacam o litoral.
+[*][b]Fronteiras nítidas e sólidas[/b] — fronteiras de países e estados continuam opacas com o zoom afastado.
+[*][b]Inverno tranquilo de perto[/b] — neve, geada e neve nas árvores somem ao aproximar, o mapa não vira mais um lençol branco. A visão estratégica mantém o inverno vanilla para você ver onde está o inverno. Rios ficam sem neve.
+[*][b]Névoa de guerra mais calma de perto[/b] — a névoa fica no mesmo lugar e com a mesma força do vanilla, mas os ofuscantes fiapos brancos viram um cinza suave que se move mais devagar.
+[*][b]Clima mais suave[/b] — neve, nevascas, chuva e tempestades de areia com cerca de um terço da intensidade vanilla, raios brilham em vez de piscar, o gelo marinho ofusca menos. Sons inalterados.
+[*][b]Setas de mapa limpas e planas[/b] — setas de movimento e de plano de batalha sem iluminação, dessaturadas e mais finas; nada de manchas neon no front.
+[*][b]Ícones coloridos e legíveis[/b] — missões navais e aéreas, botões de plano, barra superior e barras de produção.
+[*][b]Shaders mais leves[/b] — pixels de seta totalmente mascarados são descartados cedo e as etapas de iluminação e névoa de setas e símbolos são puladas.
+[/list]
+
+[h2]✔ Compatibilidade[/h2]
+[table]
+[tr][th]Versão do jogo[/th][td]1.19.x (testado na 1.19.4.1)[/td][/tr]
+[tr][th]DLC[/th][td]Compatível com todas as DLCs até Thunder at Our Gates — cada definição de seta, símbolo e efeito das DLCs é mantida (verificado arquivo por arquivo) e o mod foi testado no jogo com todas as DLCs ativadas.[/td][/tr]
+[tr][th]Ironman[/th][td]✔ Sim — as conquistas continuam ativas[/td][/tr]
+[tr][th]Multijogador[/th][td]✔ Sim — checksum inalterado, sem dessincronização[/td][/tr]
+[tr][th]Saves existentes[/th][td]✔ Adicione ou remova quando quiser[/td][/tr]
+[tr][th]Millennium Dawn[/th][td]✔ Testado com a 2.0.3 — carregue o FPS Map [b]depois[/b] do Millennium Dawn[/td][/tr]
+[tr][th]Conversões totais[/th][td]Funciona com a maioria; mods que substituem [i]gfx/FX/maparrow.shader[/i] ou [i]maparrows.txt[/i] devem carregar [b]depois[/b] deste[/td][/tr]
+[/table]
+
+[b]Por que é compatível com Ironman e multijogador?[/b] O checksum do jogo cobre apenas [i]common/, events/, history/[/i] e os dados do mapa. Este mod não toca em nenhum deles — só shaders, texturas e visuais das setas —, então seu checksum fica idêntico ao vanilla e as conquistas continuam disponíveis (verificado no jogo: checksum idêntico com e sem o FPS Map).
+
+[hr][/hr]
+
+[h2]🛠 O que foi corrigido em relação ao original[/h2]
+[list]
+[*][b]Travamento / setas quebradas corrigidos:[/b] o shader das setas era uma cópia desatualizada sem três efeitos que o motor agora exige (setas de incursão, setas de plano translúcidas). Reconstruído a partir do shader da 1.19 com o estilo do mod.
+[*][b]Linhas de QG / generais restauradas:[/b] 12 tipos de seta e símbolo adicionados em patches recentes (linhas de frente de generais posicionados, alcance de habilidades de comandante, setas de incursão) estavam faltando e não eram desenhados.
+[*][b]Textura de reflexo inválida substituída:[/b] o reflexo de água/céu era uma imagem plana onde o jogo espera um cube map. Agora é um cube map de verdade (preto) — mesmo visual, sem erros de renderização.
+[*][b]Barras de interface esticadas corrigidas:[/b] barras de implantação e de combustível ajustadas ao tamanho atual.
+[*][b]Ícones redimensionados mais suaves:[/b] 10 ícones de mapa/interface agora têm cadeias de mips completas como no vanilla.
+[*][b]Limpeza:[/b] 15 arquivos obsoletos removidos (8 idênticos ao vanilla, 7 que o jogo nunca carregava).
+[/list]
+Cada arquivo alterado é reconstruído a partir do arquivo vanilla [i]atual[/i] com apenas as edições do mod, então nada de novo da Paradox se perde.
+
+[hr][/hr]
+
+[h2]🧩 Complementos opcionais[/h2]
+[table]
+[tr][th]Complemento[/th][th]O que faz[/th][th]Millennium Dawn[/th][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828959483][b]Complemento para daltonismo[/b][/url][/td][td]Paleta de setas de plano de exército, mais 9 pares de indicadores vermelho/verde (combate, superioridade aérea/naval, minas, decisões, rendição, produção) e a barra de placar de guerra em azul/laranja — medidos para continuar distinguíveis com protanopia, deuteranopia e tritanopia.[/td][td]✔ Compatível[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3829377291][b]Complemento água calma[/b][/url][/td][td]Reflexo do sol mais suave no mar; cor da água, ondas, gelo e fronteiras inalterados.[/td][td]✖ Não combine — o MD substitui o mesmo shader de água[/td][/tr]
+[/table]
+Ative um complemento junto com este mod; o launcher o carrega depois do FPS Map automaticamente.
+
+[hr][/hr]
+
+[h2]📦 Instalação[/h2]
+[olist]
+[*]Inscreva-se.
+[*]No Paradox Launcher, adicione [b]FPS Map - Updated for 1.19 (Ironman & MP Safe)[/b] ao seu playset.
+[*][b]Desative o FPS Map original[/b] se você o tiver — os dois substituem os mesmos arquivos.
+[/olist]
+
+[h2]❓ Perguntas frequentes[/h2]
+[b]Vai mesmo aumentar meu FPS?[/b]
+Ele remove parte do trabalho por pixel na água, nos rios e nas setas. O ganho depende da sua GPU e do zoom; aparece mais em GPUs intermediárias e de notebook durante grandes guerras com muitas setas de plano. Não resolve a lentidão de CPU do fim de jogo — isso é a simulação, não o mapa.
+
+[b]Muda a jogabilidade?[/b]
+Não. É puramente visual.
+
+[b]Posso usar com outros mods de interface / mapa?[/b]
+Sim, desde que não substituam os mesmos arquivos (listados acima). Coloque mais abaixo na ordem de carregamento o mod que deve prevalecer.
+
+[b]As regiões aparecem com nomes como "STRATEGICREGION_49" — o mod está quebrado?[/b]
+Não — o FPS Map não tem nenhum texto. Isso acontece quando o editor de mapa do modo debug (Nudger) deixa arquivos na sua pasta de usuário, que sobrescrevem todos os mods. Vá até [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] e mova o conteúdo das pastas [i]localisation[/i] e [i]map[/i] para outro lugar (guarde uma cópia). O arquivo com problema costuma ser [i]localisation/english/strategic_region_names_l_english.yml[/i] com linhas como [i]KEY:-1 "..."[/i]; um [i]map/unitstacks.txt[/i] esquecido também muda o checksum e pode bloquear as conquistas do Ironman.
+
+[hr][/hr]
+
+[h2]🙏 Créditos[/h2]
+[list]
+[*]Mod original e arte: [b]Mlecz[/b] — [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map[/url]. Todo o design visual é obra dele; apoie o criador original.
+[*]Atualização 1.19 e manutenção: esta página.
+[*]Código-fonte, ferramentas de build e changelog técnico completo: [url=https://github.com/keremtrgl/ho4-fpsmap]GitHub[/url].
+[/list]
+
+Encontrou um bug? Deixe um comentário com a versão do jogo, sua lista de DLCs e o seu [i]Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log[/i].

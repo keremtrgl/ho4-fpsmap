@@ -1,0 +1,52 @@
+[h1]FPS Map – Farbenblind-Add-on[/h1]
+
+[b]Ein optionales Add-on für [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440]FPS Map – Updated for 1.19[/url], das Armee-Planpfeile und jede rot/grüne Statusanzeige bei Protanopie, Deuteranopie und Tritanopie lesbar macht.[/b]
+
+[hr][/hr]
+
+[h2]1. Armee-Planpfeile[/h2]
+Hearts of Iron IV färbt Frontlinien und Offensiven jeder Armee aus einer festen Liste von Farbtonverschiebungen — genau das, was Rot-Grün-Farbenblinde nicht sehen. Für Deuteranope sind zwei deiner ersten 16 Armeen praktisch gleich (CIEDE2000-Abstand 0,9; ab etwa 2 nehmen Menschen einen Unterschied wahr).
+
+[list]
+[*]Beginnt mit dem farbenblind-sicheren [b]Okabe-Ito[/b]-Satz.
+[*]Jede weitere Farbe wird so gewählt, dass sie bei [b]normalem Sehen und allen drei simulierten Farbsehschwächen[/b] möglichst weit von allen vorherigen entfernt ist (Machado-2009-Simulation, CIEDE2000-Abstand).
+[*]Das Spiel vergibt Farben der Reihe nach, deine ersten Armeen bekommen also die unterscheidbarsten.
+[/list]
+
+[table]
+[tr][th]Kleinster Abstand, erste 16 Armeen[/th][th]Standard[/th][th]Add-on[/th][/tr]
+[tr][td]Normales Sehen[/td][td]5,8[/td][td]11,8[/td][/tr]
+[tr][td]Protanopie[/td][td]1,8[/td][td]9,3[/td][/tr]
+[tr][td]Deuteranopie[/td][td]0,9[/td][td]9,8[/td][/tr]
+[tr][td]Tritanopie[/td][td]2,7[/td][td]10,7[/td][/tr]
+[/table]
+
+[h2]2. Rot / Grün-Anzeigen → Blau / Orange[/h2]
+Neun Gut/Schlecht-Anzeigepaare und der Kriegspunktebalken zeigen „gut“ und „schlecht“ mit Grün und Rot. Sie nutzen jetzt das Okabe-Ito-Paar Blau/Orange; Helligkeit, Details und Frames bleiben gleich.
+[list]
+[*]Landkampfbalken (Angreifer / Verteidiger)
+[*]Seekampfbalken (gewinnt / verliert)
+[*]Luftüberlegenheit und Seeregionskontrolle (gut / schlecht)
+[*]Seeminen, Seeherrschaftspfeile auf der Karte
+[*]Entscheidungsfortschritt auf der Karte
+[*]Kapitulationsfortschritt, Kriegspunkte
+[*]Produktionslinien (läuft / Ressourcen fehlen)
+[/list]
+
+[table]
+[tr][th]Schlechtestes Anzeigepaar[/th][th]Standard[/th][th]Add-on[/th][/tr]
+[tr][td]Normales Sehen[/td][td]21,4[/td][td]25,1[/td][/tr]
+[tr][td]Protanopie[/td][td]12,0[/td][td]23,1[/td][/tr]
+[tr][td]Deuteranopie[/td][td]3,4[/td][td]27,7[/td][/tr]
+[tr][td]Tritanopie[/td][td]34,3[/td][td]28,9[/td][/tr]
+[/table]
+Der schlechteste Deuteranopie-Fall waren die Seeherrschaftspfeile (3,4 — fast identisch); jetzt liegt jedes Paar über 23.
+
+[h2]Installation[/h2]
+[olist]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440]FPS Map – Updated for 1.19[/url] abonnieren (erforderlich).
+[*]Dieses Add-on abonnieren und beide aktivieren — der Launcher lädt es automatisch nach FPS Map.
+[/olist]
+
+[h2]Kompatibilität[/h2]
+Rein visuell: [b]Ironman- und Multiplayer-sicher[/b] (Prüfsumme unverändert, im Spiel geprüft), jederzeit hinzufügen oder entfernen. Kompatibel mit Millennium Dawn.

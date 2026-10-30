@@ -1,0 +1,52 @@
+[h1]FPS Map – Renk Körlüğü Eklentisi[/h1]
+
+[b][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440]FPS Map – Updated for 1.19[/url] için isteğe bağlı bir eklenti: ordu plan oklarını ve tüm kırmızı/yeşil durum göstergelerini protanopi, döteranopi ve tritanopide okunur hale getirir.[/b]
+
+[hr][/hr]
+
+[h2]1. Ordu plan okları[/h2]
+Hearts of Iron IV her ordunun cephe hatlarını ve taarruzlarını ton kaydırmalarıyla oluşturulmuş sabit bir listeden renklendirir — kırmızı-yeşil renk körlüğünün tam olarak göremediği şey. Döteranoplar için ilk 16 ordundan ikisi neredeyse aynıdır (CIEDE2000 farkı 0.9; insanların fark edebildiği en küçük fark yaklaşık 2'dir).
+
+[list]
+[*][b]Okabe-Ito[/b] renk körlüğüne uygun setiyle başlar.
+[*]Sonraki her renk, [b]normal görüşte ve simüle edilen üç renk görme eksikliğinin hepsinde[/b] önceki renklerin tümünden olabildiğince uzak olacak şekilde seçilir (Machado 2009 simülasyonu, CIEDE2000 mesafesi).
+[*]Oyun renkleri sırayla dağıtır, bu yüzden ilk orduların en ayırt edilebilir renkleri alır.
+[/list]
+
+[table]
+[tr][th]En kötü durum farkı, ilk 16 ordu[/th][th]Standart[/th][th]Eklenti[/th][/tr]
+[tr][td]Normal görüş[/td][td]5.8[/td][td]11.8[/td][/tr]
+[tr][td]Protanopi[/td][td]1.8[/td][td]9.3[/td][/tr]
+[tr][td]Döteranopi[/td][td]0.9[/td][td]9.8[/td][/tr]
+[tr][td]Tritanopi[/td][td]2.7[/td][td]10.7[/td][/tr]
+[/table]
+
+[h2]2. Kırmızı / yeşil göstergeler → mavi / turuncu[/h2]
+Dokuz iyi/kötü gösterge çifti ve savaş skoru çubuğu "iyi" ya da "kötü"yü yeşil ve kırmızıyla anlatır. Artık Okabe-Ito mavi/turuncu çiftini kullanıyorlar; parlaklık, detay ve kareler değişmedi.
+[list]
+[*]Kara muharebesi çubuğu (saldıran / savunan)
+[*]Deniz muharebesi çubuğu (kazanan / kaybeden)
+[*]Hava üstünlüğü ve deniz bölgesi kontrolü (iyi / kötü)
+[*]Deniz mayınları, haritadaki deniz hâkimiyeti okları
+[*]Haritadaki karar ilerlemesi
+[*]Teslim olma ilerlemesi, savaş skoru
+[*]Üretim hatları (çalışıyor / kaynak eksik)
+[/list]
+
+[table]
+[tr][th]En kötü gösterge çifti[/th][th]Standart[/th][th]Eklenti[/th][/tr]
+[tr][td]Normal görüş[/td][td]21.4[/td][td]25.1[/td][/tr]
+[tr][td]Protanopi[/td][td]12.0[/td][td]23.1[/td][/tr]
+[tr][td]Döteranopi[/td][td]3.4[/td][td]27.7[/td][/tr]
+[tr][td]Tritanopi[/td][td]34.3[/td][td]28.9[/td][/tr]
+[/table]
+Döteranopide en kötü durum deniz hâkimiyeti oklarıydı (3.4 — neredeyse aynı); artık her çift 23'ün üzerinde.
+
+[h2]Kurulum[/h2]
+[olist]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440]FPS Map – Updated for 1.19[/url] moduna abone ol (gerekli).
+[*]Bu eklentiye abone ol ve ikisini birden etkinleştir — launcher onu FPS Map'ten sonra otomatik yükler.
+[/olist]
+
+[h2]Uyumluluk[/h2]
+Tamamen görsel: [b]Ironman ve çok oyunculu uyumlu[/b] (oyun checksum'u değişmez, oyunda doğrulandı), istediğin zaman ekle ya da kaldır. Millennium Dawn ile uyumlu.

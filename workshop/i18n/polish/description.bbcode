@@ -1,0 +1,88 @@
+[h1]FPS Map — zaktualizowana do 1.19 (bezpieczna dla Ironmana i multiplayera)[/h1]
+
+[b]Czystsza, ostrzejsza, lżejsza mapa — przebudowana od podstaw dla Hearts of Iron IV 1.19.x i wszystkich DLC aż do Thunder at Our Gates.[/b]
+
+To utrzymywana kontynuacja lubianej [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map autorstwa Mlecza[/url]. Oryginał przestał być aktualizowany, a gra wciąż się zmieniała: przestarzałe shadery, brakujące typy strzałek i błędne tekstury powodowały crashe, niewidoczne linie dowództwa i zepsute strzałki planów. Ta wersja zachowuje dokładnie znany wygląd i naprawia wszystko pod spodem.
+
+[hr][/hr]
+
+[h2]✔ Co robi[/h2]
+[list]
+[*][b]Woda bez odbić[/b] — usunięte odbicia nieba; ciemniejsze, spokojniejsze morza, na których wyraźniej widać wybrzeża.
+[*][b]Ostrzejsze, pełne granice[/b] — granice państw i regionów pozostają w pełni kryjące po oddaleniu.
+[*][b]Spokojna zima z bliska[/b] — śnieg, szron i śnieg na drzewach znikają po przybliżeniu, mapa nie zmienia się w białe prześcieradło. Widok strategiczny zachowuje zimę z wersji podstawowej, więc nadal widać, gdzie jest zima. Rzeki bez śniegu.
+[*][b]Spokojniejsza mgła wojny z bliska[/b] — mgła jest w tych samych miejscach i tak samo gęsta jak w wersji podstawowej, ale jej oślepiające białe smugi stały się miękką szarością, która płynie wolniej.
+[*][b]Łagodniejsza pogoda[/b] — opady śniegu, zamiecie, deszcz i burze piaskowe w ok. jednej trzeciej intensywności podstawowej, błyskawice świecą zamiast migać, lód morski mniej razi. Dźwięki pogody bez zmian.
+[*][b]Czyste, płaskie strzałki[/b] — nieoświetlone, mniej nasycone i cieńsze strzałki ruchu i planów bitewnych; koniec z neonowymi plamami nad frontem.
+[*][b]Kolorowe, czytelne ikony[/b] — misje morskie i lotnicze, przyciski planów, górny pasek i paski produkcji.
+[*][b]Lżejsza praca shaderów[/b] — w pełni zamaskowane piksele strzałek są odrzucane wcześnie, a przejścia oświetlenia i mgły dla strzałek i symboli są pomijane.
+[/list]
+
+[h2]✔ Kompatybilność[/h2]
+[table]
+[tr][th]Wersja gry[/th][td]1.19.x (testowane na 1.19.4.1)[/td][/tr]
+[tr][th]DLC[/th][td]Zgodna ze wszystkimi DLC aż do Thunder at Our Gates — każda definicja strzałki, symbolu i efektu z DLC jest zachowana (sprawdzone plik po pliku), a mod przetestowano w grze ze wszystkimi włączonymi DLC.[/td][/tr]
+[tr][th]Ironman[/th][td]✔ Tak — osiągnięcia pozostają aktywne[/td][/tr]
+[tr][th]Multiplayer[/th][td]✔ Tak — suma kontrolna bez zmian, brak desynchronizacji[/td][/tr]
+[tr][th]Istniejące zapisy[/th][td]✔ Dodawaj lub usuwaj w dowolnym momencie[/td][/tr]
+[tr][th]Millennium Dawn[/th][td]✔ Testowane z 2.0.3 — wczytuj FPS Map [b]po[/b] Millennium Dawn[/td][/tr]
+[tr][th]Konwersje totalne[/th][td]Działa z większością; mody zastępujące [i]gfx/FX/maparrow.shader[/i] lub [i]maparrows.txt[/i] powinny wczytywać się [b]po[/b] tym[/td][/tr]
+[/table]
+
+[b]Dlaczego bezpieczna dla Ironmana i multiplayera?[/b] Suma kontrolna gry obejmuje tylko [i]common/, events/, history/[/i] i dane mapy. Ten mod nie dotyka żadnego z nich — tylko shaderów, tekstur i grafik strzałek — więc suma kontrolna pozostaje taka jak w wersji podstawowej, a osiągnięcia są dostępne (sprawdzone w grze: suma z FPS Map i bez niej jest identyczna).
+
+[hr][/hr]
+
+[h2]🛠 Co naprawiono względem oryginału[/h2]
+[list]
+[*][b]Crashe / zepsute strzałki naprawione:[/b] shader strzałek był przestarzałą kopią bez trzech efektów wymaganych teraz przez silnik (strzałki rajdów, półprzezroczyste strzałki planów). Odbudowany z shadera 1.19 ze stylem moda.
+[*][b]Przywrócone linie dowództwa / generałów:[/b] brakowało 12 typów strzałek i symboli z nowszych patchy (linie frontu rozmieszczonych generałów, zasięg umiejętności dowódców, strzałki rajdów) i w ogóle się nie rysowały.
+[*][b]Błędna tekstura odbić zastąpiona:[/b] odbicie wody/nieba było płaskim obrazkiem tam, gdzie gra oczekuje cube mapy. Teraz to prawdziwa (czarna) cube mapa — ten sam wygląd, bez błędów renderowania.
+[*][b]Rozciągnięte paski interfejsu naprawione:[/b] paski rozmieszczenia i paliwa dopasowane do obecnych rozmiarów.
+[*][b]Gładsze skalowane ikony:[/b] 10 ikon mapy/interfejsu ma teraz pełne łańcuchy mipmap jak w wersji podstawowej.
+[*][b]Porządki:[/b] usunięto 15 zbędnych plików (8 identycznych z wersją podstawową, 7 nigdy niewczytywanych przez grę).
+[/list]
+Każdy zmieniony plik jest budowany od nowa z [i]aktualnego[/i] pliku gry z naniesionymi tylko zmianami moda, więc nic nowego od Paradoxu nie przepada.
+
+[hr][/hr]
+
+[h2]🧩 Opcjonalne dodatki[/h2]
+[table]
+[tr][th]Dodatek[/th][th]Co robi[/th][th]Millennium Dawn[/th][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828959483][b]Dodatek dla daltonistów[/b][/url][/td][td]Paleta strzałek planów armii oraz 9 czerwono-zielonych par wskaźników (walka, przewaga powietrzna/morska, miny, decyzje, kapitulacja, produkcja) i pasek wyniku wojny w kolorach niebieskim/pomarańczowym — zmierzono, że pozostają rozróżnialne przy protanopii, deuteranopii i tritanopii.[/td][td]✔ Zgodny[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3829377291][b]Dodatek „Spokojna woda”[/b][/url][/td][td]Łagodniejszy odblask słońca na morzu; kolor wody, fale, lód i granice bez zmian.[/td][td]✖ Nie łączyć — MD zastępuje ten sam shader wody[/td][/tr]
+[/table]
+Włącz dodatek razem z tym modem; launcher sam wczyta go po FPS Map.
+
+[hr][/hr]
+
+[h2]📦 Instalacja[/h2]
+[olist]
+[*]Zasubskrybuj.
+[*]W Paradox Launcherze dodaj [b]FPS Map - Updated for 1.19 (Ironman & MP Safe)[/b] do playsetu.
+[*][b]Wyłącz oryginalną FPS Map[/b], jeśli ją masz — oba mody zastępują te same pliki.
+[/olist]
+
+[h2]❓ FAQ[/h2]
+[b]Czy naprawdę podniesie mi FPS?[/b]
+Usuwa część pracy na piksel przy wodzie, rzekach i strzałkach. Zysk zależy od karty graficznej i przybliżenia; najbardziej widać go na średnich i laptopowych GPU podczas dużych wojen z wieloma strzałkami planów. Nie naprawi spowolnień CPU w późnej grze — to symulacja, nie mapa.
+
+[b]Czy zmienia rozgrywkę?[/b]
+Nie. Wyłącznie grafika.
+
+[b]Czy działa z innymi modami interfejsu / mapy?[/b]
+Tak, o ile nie zastępują tych samych plików (lista powyżej). Mod, który ma „wygrać”, ustaw niżej w kolejności wczytywania.
+
+[b]Regiony nazywają się „STRATEGICREGION_49” — czy mod jest zepsuty?[/b]
+Nie — FPS Map nie zawiera żadnego tekstu. Dzieje się tak, gdy edytor mapy z trybu debug (Nudger) zostawi pliki w folderze użytkownika, które nadpisują wszystkie mody. Otwórz [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] i przenieś gdzie indziej zawartość folderów [i]localisation[/i] i [i]map[/i] (zachowaj kopię). Winny jest zwykle [i]localisation/english/strategic_region_names_l_english.yml[/i] z liniami typu [i]KEY:-1 "..."[/i]; pozostawiony [i]map/unitstacks.txt[/i] zmienia też sumę kontrolną i może blokować osiągnięcia w Ironmanie.
+
+[hr][/hr]
+
+[h2]🙏 Twórcy[/h2]
+[list]
+[*]Oryginalny mod i grafika: [b]Mlecz[/b] — [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map[/url]. Cały projekt wizualny to jego dzieło; wesprzyj autora oryginału.
+[*]Aktualizacja do 1.19 i utrzymanie: ta strona.
+[*]Kod źródłowy, narzędzia budowania i pełny techniczny dziennik zmian: [url=https://github.com/keremtrgl/ho4-fpsmap]GitHub[/url].
+[/list]
+
+Znalazłeś błąd? Zostaw komentarz z wersją gry, listą DLC i plikiem [i]Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log[/i].

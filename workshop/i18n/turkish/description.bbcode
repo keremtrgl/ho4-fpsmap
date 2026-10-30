@@ -1,0 +1,88 @@
+[h1]FPS Map — 1.19 için Güncellendi (Ironman ve Çok Oyunculu Uyumlu)[/h1]
+
+[b]Daha temiz, daha net, daha hafif bir harita — Hearts of Iron IV 1.19.x ve Thunder at Our Gates dahil tüm DLC'ler için baştan derlendi.[/b]
+
+Bu mod, çok sevilen [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]Mlecz'in FPS Map modunun[/url] bakımı süren devamıdır. Orijinal mod güncellenmeyi bıraktı ama oyun değişmeye devam etti: eski shader'lar, eksik ok türleri ve geçersiz texture'lar çökmelere, görünmeyen karargâh çizgilerine ve bozuk plan oklarına yol açtı. Bu sürüm bildiğin görünümü aynen korur, altındaki her şeyi düzeltir.
+
+[hr][/hr]
+
+[h2]✔ Ne yapar[/h2]
+[list]
+[*][b]Yansımasız su[/b] — gökyüzü yansıması kaldırıldı; kıyıları öne çıkaran daha koyu, sakin denizler.
+[*][b]Keskin, dolu sınırlar[/b] — ülke ve eyalet sınırları uzaklaştırınca da tamamen opak kalır.
+[*][b]Yakında sakin kış[/b] — kar, kırağı ve ağaçlardaki kar yaklaştıkça kaybolur, harita bembeyaz bir çarşafa dönmez. Stratejik görünüm vanilla kışı korur, kışın nerede olduğunu yine görürsün. Nehirlerde kar yok.
+[*][b]Yakında daha sakin savaş sisi[/b] — sis aynı yerde ve vanilla kadar güçlü kalır, ama göz alan beyaz dalgaları daha yavaş süzülen yumuşak bir griye dönüşür.
+[*][b]Yumuşak hava efektleri[/b] — kar, tipi, yağmur ve kum fırtınaları vanilla yoğunluğunun yaklaşık üçte biri; şimşekler çakmak yerine parlar, deniz buzu daha az parlar. Hava sesleri değişmedi.
+[*][b]Temiz, düz harita okları[/b] — ışıklandırmasız, doygunluğu düşük, daha ince hareket ve savaş planı okları; cephede neon lekeler yok.
+[*][b]Renkli, okunaklı simgeler[/b] — deniz görevleri, hava görevleri, plan düğmeleri, üst çubuk ve üretim çubukları.
+[*][b]Daha hafif shader işi[/b] — tamamen maskelenen ok pikselleri erkenden atılır, ok ve sembol ışıklandırma ile sis geçişleri atlanır.
+[/list]
+
+[h2]✔ Uyumluluk[/h2]
+[table]
+[tr][th]Oyun sürümü[/th][td]1.19.x (1.19.4.1 üzerinde test edildi)[/td][/tr]
+[tr][th]DLC[/th][td]Thunder at Our Gates dahil tüm DLC'lerle uyumlu — her DLC ok, sembol ve efekt tanımı korunur (dosya dosya kontrol edildi) ve mod tüm DLC'ler açıkken oyunda test edildi.[/td][/tr]
+[tr][th]Ironman[/th][td]✔ Evet — başarımlar açık kalır[/td][/tr]
+[tr][th]Çok oyunculu[/th][td]✔ Evet — checksum değişmez, desync olmaz[/td][/tr]
+[tr][th]Mevcut kayıtlar[/th][td]✔ İstediğin zaman ekle ya da kaldır[/td][/tr]
+[tr][th]Millennium Dawn[/th][td]✔ 2.0.3 ile test edildi — FPS Map'i Millennium Dawn'dan [b]sonra[/b] yükle[/td][/tr]
+[tr][th]Total conversion modlar[/th][td]Çoğuyla çalışır; [i]gfx/FX/maparrow.shader[/i] veya [i]maparrows.txt[/i] dosyalarını değiştiren modlar bu moddan [b]sonra[/b] yüklenmeli[/td][/tr]
+[/table]
+
+[b]Neden Ironman ve çok oyunculu uyumlu?[/b] Oyun checksum'u yalnızca [i]common/, events/, history/[/i] klasörlerini ve harita veri dosyalarını kapsar. Bu mod bunların hiçbirine dokunmaz — sadece shader, texture ve ok görsellerini değiştirir — bu yüzden checksum'un vanilla ile aynı kalır ve başarımlar açık kalır (oyunda doğrulandı: FPS Map açıkken checksum, kapalıykenkiyle birebir aynı).
+
+[hr][/hr]
+
+[h2]🛠 Orijinale göre neler düzeltildi[/h2]
+[list]
+[*][b]Çökme / bozuk oklar düzeltildi:[/b] harita oku shader'ı, motorun artık zorunlu tuttuğu üç efekti (baskın okları, saydam plan okları) içermeyen eski bir kopyaydı. 1.19 shader'ından yeniden derlendi, modun stili tekrar uygulandı.
+[*][b]Karargâh / general bağlantı çizgileri geri geldi:[/b] son yamalarda eklenen 12 ok ve sembol türü (sahadaki generallerin cephe çizgileri, komutan yetenek menzili, baskın okları) eksikti ve hiç çizilmiyordu.
+[*][b]Geçersiz yansıma texture'ı değiştirildi:[/b] su/gökyüzü yansıması, oyunun cube map beklediği yerde düz bir resimdi. Artık doğru (siyah) bir cube map — aynı görünüm, render hatası yok.
+[*][b]Gerilmiş arayüz çubukları düzeltildi:[/b] konuşlanma ve yakıt çubukları güncel arayüz boyutlarına getirildi.
+[*][b]Ölçeklenen simgeler daha pürüzsüz:[/b] 10 harita/arayüz simgesi artık vanilla gibi tam mip zinciri taşıyor.
+[*][b]Temizlik:[/b] 15 gereksiz dosya kaldırıldı (8'i vanilla ile aynıydı, 7'sini oyun hiç yüklemiyordu).
+[/list]
+Değişen her dosya [i]güncel[/i] vanilla dosyasından, yalnızca modun kendi düzenlemeleri uygulanarak yeniden derlenir; Paradox'un eklediği hiçbir yenilik kaybolmaz.
+
+[hr][/hr]
+
+[h2]🧩 İsteğe bağlı eklentiler[/h2]
+[table]
+[tr][th]Eklenti[/th][th]Ne yapar[/th][th]Millennium Dawn[/th][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828959483][b]Renk Körlüğü Eklentisi[/b][/url][/td][td]Ordu plan oku paleti, ayrıca 9 kırmızı/yeşil gösterge çifti (muharebe, hava/deniz üstünlüğü, mayınlar, kararlar, teslim olma, üretim) ve savaş skoru çubuğu mavi/turuncuya çevrildi — protanopi, döteranopi ve tritanopide ayırt edilebilir kaldıkları ölçüldü.[/td][td]✔ Uyumlu[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3829377291][b]Sakin Su Eklentisi[/b][/url][/td][td]Denizdeki güneş parlamasını yumuşatır; su rengi, dalgalar, buz ve sınırlar değişmez.[/td][td]✖ Birlikte kullanma — MD aynı su shader'ını değiştiriyor[/td][/tr]
+[/table]
+Eklentiyi bu modla birlikte etkinleştir; launcher onu FPS Map'ten sonra otomatik yükler.
+
+[hr][/hr]
+
+[h2]📦 Kurulum[/h2]
+[olist]
+[*]Abone ol.
+[*]Paradox Launcher'da [b]FPS Map - Updated for 1.19 (Ironman & MP Safe)[/b] modunu oynatma setine ekle.
+[*]Varsa [b]orijinal FPS Map'i devre dışı bırak[/b] — ikisi de aynı dosyaları değiştirir.
+[/olist]
+
+[h2]❓ SSS[/h2]
+[b]FPS'imi gerçekten artırır mı?[/b]
+Sudan, nehirlerden ve oklardan piksel başına yapılan işin bir kısmını kaldırır. Kazanç ekran kartına ve yakınlaştırma seviyesine bağlıdır; en çok orta seviye ve dizüstü ekran kartlarında, çok sayıda plan okunun olduğu büyük savaşlarda fark edilir. Oyunun geç döneminde CPU kaynaklı yavaşlamaları düzeltmez — o harita değil, oyun simülasyonudur.
+
+[b]Oynanışı değiştirir mi?[/b]
+Hayır. Tamamen görseldir.
+
+[b]Başka arayüz / harita modlarıyla kullanabilir miyim?[/b]
+Evet, aynı dosyaları değiştirmiyorlarsa (yukarıda listelendi). Hangi modun geçerli olmasını istiyorsan onu yükleme sırasında daha alta koy.
+
+[b]Deniz ve kara bölgeleri "STRATEGICREGION_49" gibi isimlerle görünüyor — mod bozuk mu?[/b]
+Hayır — FPS Map hiç metin içermez. Bu, oyunun debug modundaki harita editörünün (Nudger) kullanıcı klasörüne bıraktığı dosyalar her modu ezdiğinde olur. [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] klasörüne git ve [i]localisation[/i] ile [i]map[/i] klasörlerinin içeriğini başka bir yere taşı (bir kopyasını sakla). Bozuk dosya genellikle [i]KEY:-1 "..."[/i] gibi satırlar içeren [i]localisation/english/strategic_region_names_l_english.yml[/i] dosyasıdır; geride kalan bir [i]map/unitstacks.txt[/i] de checksum'unu değiştirir ve Ironman başarımlarını engelleyebilir.
+
+[hr][/hr]
+
+[h2]🙏 Emeği geçenler[/h2]
+[list]
+[*]Orijinal mod ve sanat: [b]Mlecz[/b] — [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map[/url]. Tüm görsel tasarım onun eseridir; lütfen orijinal yapımcıyı destekle.
+[*]1.19 güncellemesi ve bakım: bu sayfa.
+[*]Kaynak kod, derleme araçları ve tam teknik değişiklik günlüğü: [url=https://github.com/keremtrgl/ho4-fpsmap]GitHub[/url].
+[/list]
+
+Hata mı buldun? Oyun sürümünü, DLC listeni ve [i]Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log[/i] dosyanı yorum olarak bırak.

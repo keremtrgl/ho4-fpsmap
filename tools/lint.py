@@ -111,17 +111,28 @@ for rel in particles:
         problems.append(f'fps_map/{rel}: {t.count("# FPS Map")} tuned lines, expected {want}')
 notes.append(f'{len(particles)} weather particle files fully tuned')
 
-# workshop texts
-for f in os.listdir(os.path.join(ROOT, 'workshop')):
-    if not f.endswith(('.bbcode', '.txt')):
+# workshop texts (English in workshop/, translations in workshop/i18n/<language>/)
+WS = os.path.join(ROOT, 'workshop')
+STEAM_MAX = 8000  # Workshop description limit, in characters
+for f in sorted(rel_files(WS)):
+    if not f.endswith(('.bbcode', '.txt')) or f == 'comment_reply.txt':
         continue
-    t = open(os.path.join(ROOT, 'workshop', f), encoding='utf-8').read()
+    t = open(os.path.join(WS, f), encoding='utf-8').read()
+    if f.endswith('description.bbcode') and len(t) > STEAM_MAX:
+        problems.append(f'workshop/{f}: {len(t)} characters, Steam allows {STEAM_MAX}')
+    if f.startswith('i18n/'):
+        # a translation keeps every link and the section/table layout of the English page
+        en = open(os.path.join(WS, os.path.basename(f)), encoding='utf-8').read()
+        for what, rx in (('links', r'\[url=([^\]]+)\]'), ('layout', r'\[(h1|h2|hr|table|tr|olist|list)\]')):
+            if sorted(re.findall(rx, t)) != sorted(re.findall(rx, en)):
+                problems.append(f'workshop/{f}: {what} differ from the English page')
     for tag in ('b', 'i', 'url', 'list', 'olist', 'table', 'tr', 'td', 'th', 'h1', 'h2'):
         o = len(re.findall(rf'\[{tag}(=[^\]]*)?\]', t))
         c = t.count(f'[/{tag}]')
         if o != c:
             problems.append(f'workshop/{f}: [{tag}] opened {o}x, closed {c}x')
-    if re.search(r'TODO|XXX|\?\?\?|lorem|CALMWATER_ID', t, re.I):
+    # case-sensitive: Spanish/Portuguese "todo" is a word, not a placeholder
+    if re.search(r'TODO|XXX|\?\?\?|[Ll]orem|CALMWATER_ID', t):
         problems.append(f'workshop/{f}: placeholder text left')
 
 for n in notes:

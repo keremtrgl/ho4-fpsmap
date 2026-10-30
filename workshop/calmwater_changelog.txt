@@ -1,0 +1,8 @@
+1.19.4.0-4 — First release
+
+[list]
+[*]Sun glare on the sea scaled to 35% (only the sun's specular light on water).
+[*]Built from the 1.19.4 water shader with exactly one added line; colour, waves, ice and borders are unchanged.
+[*]Verified in game on 1.19.4 together with FPS Map and the Colour-blind Add-on: checksum unchanged (Ironman & MP safe), no errors.
+[*]Not for Millennium Dawn: MD replaces the same water shader.
+[/list]

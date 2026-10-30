@@ -1,0 +1,52 @@
+[h1]FPS Map – Colour-blind Add-on[/h1]
+
+[b]An optional add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440]FPS Map – Updated for 1.19[/url] that makes army plan arrows and every red/green status indicator readable with protanopia, deuteranopia or tritanopia.[/b]
+
+[hr][/hr]
+
+[h2]1. Army plan arrows[/h2]
+Hearts of Iron IV colours each army's front lines and offensives from a fixed list built from hue shifts — exactly what red-green colour blindness cannot see. For deuteranopes, two of your first 16 armies are practically identical (CIEDE2000 difference 0.9; about 2 is the smallest difference people notice).
+
+[list]
+[*]Starts with the [b]Okabe-Ito[/b] colour-blind-safe set.
+[*]Every next colour is chosen to stay as far as possible from all earlier ones under [b]normal vision and all three simulated colour-vision deficiencies[/b] (Machado 2009 simulation, CIEDE2000 distance).
+[*]The game hands out colours in order, so your first armies get the most distinct ones.
+[/list]
+
+[table]
+[tr][th]Worst-case difference, first 16 armies[/th][th]Standard[/th][th]Add-on[/th][/tr]
+[tr][td]Normal vision[/td][td]5.8[/td][td]11.8[/td][/tr]
+[tr][td]Protanopia[/td][td]1.8[/td][td]9.3[/td][/tr]
+[tr][td]Deuteranopia[/td][td]0.9[/td][td]9.8[/td][/tr]
+[tr][td]Tritanopia[/td][td]2.7[/td][td]10.7[/td][/tr]
+[/table]
+
+[h2]2. Red / green indicators → blue / orange[/h2]
+Nine good/bad indicator pairs and the war score bar tell you "good" or "bad" with green and red. They now use the Okabe-Ito blue/orange pair; brightness, detail and frames are unchanged.
+[list]
+[*]Land combat bar (attacker / defender)
+[*]Naval combat bar (winning / losing)
+[*]Air superiority and naval region control (good / bad)
+[*]Naval mines, naval dominance arrows on the map
+[*]Decision progress on the map
+[*]Surrender progress, war score
+[*]Production lines (running / lacking resources)
+[/list]
+
+[table]
+[tr][th]Worst indicator pair[/th][th]Standard[/th][th]Add-on[/th][/tr]
+[tr][td]Normal vision[/td][td]21.4[/td][td]25.1[/td][/tr]
+[tr][td]Protanopia[/td][td]12.0[/td][td]23.1[/td][/tr]
+[tr][td]Deuteranopia[/td][td]3.4[/td][td]27.7[/td][/tr]
+[tr][td]Tritanopia[/td][td]34.3[/td][td]28.9[/td][/tr]
+[/table]
+The worst deuteranopia case was the naval dominance arrows (3.4 — nearly identical); every pair is now above 23.
+
+[h2]Installation[/h2]
+[olist]
+[*]Subscribe to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440]FPS Map – Updated for 1.19[/url] (required).
+[*]Subscribe to this add-on and enable both — the launcher loads it after FPS Map automatically.
+[/olist]
+
+[h2]Compatibility[/h2]
+Purely visual: [b]Ironman and multiplayer safe[/b] (game checksum unchanged, verified in game), add or remove at any time. Compatible with Millennium Dawn.

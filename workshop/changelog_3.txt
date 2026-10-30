@@ -1,0 +1,29 @@
+1.19.4.0-3 — Calm close-up winter & softer weather
+
+Requested in the comments: zoomed in, winter turned the map into a white sheet. Fixed — thank you for the feedback!
+
+[b]Winter, zoomed in[/b]
+[list]
+[*][b]No more white-out.[/b] Vanilla draws snow strongest when you zoom IN (95%) and faintest zoomed out (20%). Snow now fades out as you zoom in, so terrain, forests, rivers and cities stay readable all winter.
+[*][b]Strategic view unchanged.[/b] Zoomed out, winter looks exactly like vanilla (verified pixel-identical), so you can still see at a glance where winter is.
+[*]Snow on trees and buildings follows the same curve.
+[*]The frost tint no longer ignores zoom — it used to lay a fixed 40% blue-white layer over every wintry tile.
+[/list]
+[b]Weather[/b]
+[list]
+[*]Snowfall, blizzards, rain and sandstorms at about a third of vanilla intensity (opacity and particle count ×0.6) — calmer to look at and fewer particles to draw.
+[*]Lightning glows softly instead of strobing (flash ×0.3).
+[*]Sea ice keeps its colour but glares about 40% less.
+[*]All weather sounds are unchanged.
+[/list]
+[b]Verified[/b]
+[list]
+[*]In-game on 1.19.4, same place and day (1 Jan 1936) before/after — see the new comparison image. No mod-related entries in error.log.
+[*]Game checksum with FPS Map enabled is identical to the one without it: Ironman and multiplayer safe.
+[*]Still compatible with Millennium Dawn 2.0.3 (load FPS Map after it) — the new files don't overlap with MD.
+[*]Deliberately not changed: the sun glare on water lives in the water shader, which Millennium Dawn also replaces; changing it would undo MD's water changes.
+[/list]
+[b]Correction[/b]
+[list]
+[*]Earlier notes said "tested with all DLC". In-game testing was done on the base game; DLC compatibility is verified file by file against 1.19.4 (every DLC arrow, symbol and effect definition is kept). The description now says exactly that.
+[/list]

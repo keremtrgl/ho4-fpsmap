@@ -1,0 +1,9 @@
+1.19.4.0-4 — Red/green indicators, renamed to Colour-blind Add-on
+
+[list]
+[*][b]New:[/b] 9 red/green indicator pairs and the war score bar now use the Okabe-Ito blue/orange pair — land and naval combat bars, air superiority, naval region control, naval mines, naval dominance arrows on the map, decision progress on the map, surrender progress, war score, production lines.
+[*]Measured with simulated colour vision (Machado 2009, CIEDE2000): the worst pair for deuteranopia rises from 3.4 (naval dominance arrows, nearly identical) to 27.7; every pair is now above 23 for all three types.
+[*]Brightness, texture detail, frames and sprite layouts are unchanged; textures that FPS Map already restyles start from FPS Map's version, so the two never fight.
+[*]Renamed from "Colour-blind Arrows" to "Colour-blind Add-on", since it now covers more than arrows.
+[*]Verified in game on 1.19.4: checksum unchanged (Ironman & MP safe), no errors.
+[/list]

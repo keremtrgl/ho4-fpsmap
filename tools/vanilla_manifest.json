@@ -1,0 +1,1200 @@
+{
+ "game_version": "1.19.4.1",
+ "files": {
+  "checksum_manifest.txt": {
+   "sha256": "771814d81faf7bae0f32819380c1114c61bbec1c897b060cecd1592f104f2b76"
+  },
+  "gfx/FX/constants.fxh": {
+   "sha256": "e87910e4323b171141a225fbe2ca861dc96640036e4f359fd3d75ce573cd1d1c"
+  },
+  "gfx/FX/fow.fxh": {
+   "sha256": "14bcee93d30f16493b38052ccd926e08a9e8357ecaeb6371484023e18822cd18"
+  },
+  "gfx/FX/maparrow.shader": {
+   "sha256": "ec55c6d982e3306476993f8133af7f11499ebc7f4239d3223dd3122c5389a8e6"
+  },
+  "gfx/FX/pdxwater.shader": {
+   "sha256": "3ec59311e986ace1785cf604ee46ef1930cdd51b3b085fb380a9d89d9bc53ace"
+  },
+  "gfx/FX/river.shader": {
+   "sha256": "8f085d78a3cdf3ba07ace287276e75ab9006855569883a20081a160680ca8ac5"
+  },
+  "gfx/FX/standardfuncsgfx.fxh": {
+   "sha256": "0609c68f6819693a92300701f1b538fb7f606b7c9ed66ae47774b9d9897ba2d2"
+  },
+  "gfx/interface/add_prod_aircraft_line.dds": {
+   "sha256": "98995155d8979c7605c5b2dd64057ae5a5ae849b51b46803a5607c6143becbf3",
+   "dds": [
+    243,
+    41,
+    1
+   ]
+  },
+  "gfx/interface/air_checkbox.dds": {
+   "sha256": "19f9c51843a5cea2b4df1ad851f322bf1b459f578ae72f8bba57f1fbf5d6c8cd",
+   "dds": [
+    90,
+    32,
+    1
+   ]
+  },
+  "gfx/interface/armor_softness_icon.dds": {
+   "sha256": "a6baa6df15dfab149e5efab4bd9cbbd28959e1cce8a10664ce272d0b44ca4447",
+   "dds": [
+    32,
+    13,
+    1
+   ]
+  },
+  "gfx/interface/battle_indicator_direction.dds": {
+   "sha256": "5ab104bef11e849049c2b77763b2c94d30f6cc90e1c656ddda6663a7ddc0b86d",
+   "dds": [
+    70,
+    70,
+    7
+   ]
+  },
+  "gfx/interface/decisionview/on_map_progress_bar_bad.dds": {
+   "sha256": "396aed052da524b6c046460c7fc1716a64a9d64c143ad48312183db839b31f6f",
+   "dds": [
+    43,
+    12,
+    1
+   ]
+  },
+  "gfx/interface/decisionview/on_map_progress_bar_good.dds": {
+   "sha256": "dc2e9e81aabf58afdddfed828c63d60a42650dba4904647875397032f24bbfc3",
+   "dds": [
+    43,
+    12,
+    1
+   ]
+  },
+  "gfx/interface/deployment_entry_progressbar.dds": {
+   "sha256": "81de1921983e125f588ee164dd7047254253dbc1ca1a1692eb8416ebaea6469c",
+   "dds": [
+    65,
+    12,
+    1
+   ]
+  },
+  "gfx/interface/deployment_entry_stalled_progressbar.dds": {
+   "sha256": "1af7bd1f5096fa4b9f86148b00dab83b02ab55c37d684ec86264a87ce64549b4",
+   "dds": [
+    65,
+    12,
+    1
+   ]
+  },
+  "gfx/interface/factory_icon.dds": {
+   "sha256": "b9ffafb9ffdcf6057ef217cc39b79b334716f2d75cff8d4d63164efe8c8ad7aa",
+   "dds": [
+    330,
+    18,
+    1
+   ]
+  },
+  "gfx/interface/factory_icon_half.dds": {
+   "sha256": "e46a57a33ecfb3c0a6ce7020b23ed029187ea9bf12c3ca84e7ba5e133244f312",
+   "dds": [
+    330,
+    18,
+    1
+   ]
+  },
+  "gfx/interface/fuel_bar.dds": {
+   "sha256": "5a6e2adb3ac31ee1fc6739c45ab1046df0cb0dd494e170d4c4141361c3c1bae6",
+   "dds": [
+    45,
+    24,
+    6
+   ]
+  },
+  "gfx/interface/inf_softness_icon.dds": {
+   "sha256": "dda61d43414a1ba94de4e683937d29ef25726bf00fca16de790baacd1d6db16c",
+   "dds": [
+    19,
+    16,
+    1
+   ]
+  },
+  "gfx/interface/intel_ledger/air_tab_icon.dds": {
+   "sha256": "3bb2d4f6869e79a63cc2195d5c09763350f0e6cfcff65956e892c9377e71c427",
+   "dds": [
+    39,
+    39,
+    1
+   ]
+  },
+  "gfx/interface/intel_ledger/army_tab_icon.dds": {
+   "sha256": "f8f3cc485dc775e7f7ebf8fb0549e7f490dafa620233b3089e7043a235c97f64",
+   "dds": [
+    39,
+    39,
+    1
+   ]
+  },
+  "gfx/interface/intel_ledger/economy_tab_icon.dds": {
+   "sha256": "77d9afc67a197785751f651531c0d245cade28efc52f2aa0510356e3239954a2",
+   "dds": [
+    39,
+    39,
+    1
+   ]
+  },
+  "gfx/interface/intel_ledger/navy_tab_icon.dds": {
+   "sha256": "972ddad7c24e54496334aa9a5a0e809a7c106e876b7a053aeae8f925f1b6a1db",
+   "dds": [
+    39,
+    39,
+    1
+   ]
+  },
+  "gfx/interface/landcombat_attacker_progress.dds": {
+   "sha256": "ca9b244019c7dc6ff6017de5be666a28b2742bafc0f488f8b73075926c39e938",
+   "dds": [
+    179,
+    14,
+    1
+   ]
+  },
+  "gfx/interface/landcombat_defender_progress.dds": {
+   "sha256": "3ed7bf96f2c7b5d47e0173609980af9dea2b31c1f92f3180f697e198bd2a7a8c",
+   "dds": [
+    179,
+    14,
+    1
+   ]
+  },
+  "gfx/interface/mapicons/mapicon_naval_mission_convoy_escort.dds": {
+   "sha256": "a075ca583368a033b8238334e62fe12350646cb9ddda842bf3cc1a0ea6f4cfda",
+   "dds": [
+    92,
+    50,
+    1
+   ]
+  },
+  "gfx/interface/mapicons/mapicon_naval_mission_convoy_raid.dds": {
+   "sha256": "11b44b86b4fd1c9fd7722088a4b169582d5de314d866289343c3b44581914f5c",
+   "dds": [
+    92,
+    50,
+    1
+   ]
+  },
+  "gfx/interface/mapicons/mapicon_naval_mission_mines_planting.dds": {
+   "sha256": "4713d7bfaa6d90558637f8bb8f5eff8a11784f535e65b9aef04dea8be9042bdb",
+   "dds": [
+    92,
+    50,
+    7
+   ]
+  },
+  "gfx/interface/mapicons/mapicon_naval_mission_mines_sweeping.dds": {
+   "sha256": "5b6b1b16f06e63a61531d49fdaa778bfd03ce55d61e6b2a122f01641313361c8",
+   "dds": [
+    92,
+    50,
+    7
+   ]
+  },
+  "gfx/interface/mapicons/mapicon_naval_mission_naval_invasion_support.dds": {
+   "sha256": "692f3c0ad26625bf050e5a74d33e8c0755d47b8543d3949b6950914dd86d8d73",
+   "dds": [
+    92,
+    50,
+    7
+   ]
+  },
+  "gfx/interface/mapicons/mapicon_naval_mission_patrol.dds": {
+   "sha256": "9a2dc43a1bcf954b94615424a20896ea1f2175871d8a7a6df5b873f12a1242a1",
+   "dds": [
+    92,
+    50,
+    1
+   ]
+  },
+  "gfx/interface/mapicons/mapicon_naval_mission_search_and_destroy.dds": {
+   "sha256": "78710bb149bb1dfb30b840381a04999b1569fe450fc449d38dca4593bc9db965",
+   "dds": [
+    92,
+    50,
+    1
+   ]
+  },
+  "gfx/interface/mapicons/mapicon_naval_mission_strike_force.dds": {
+   "sha256": "78710bb149bb1dfb30b840381a04999b1569fe450fc449d38dca4593bc9db965",
+   "dds": [
+    92,
+    50,
+    1
+   ]
+  },
+  "gfx/interface/mapicons/mapicon_naval_mission_training.dds": {
+   "sha256": "cf26c209de5629adcc9895d66f45d72f713e3f2d9dc730eb9b77164cc46959fa",
+   "dds": [
+    92,
+    50,
+    1
+   ]
+  },
+  "gfx/interface/mapicons/naval_mission_dominance_anim_arrows_bad.dds": {
+   "sha256": "565d3be5fff91ffa7b63a705d5abda58dcd04f86afcb6ca9b58715b99bd64a20",
+   "dds": [
+    54,
+    63,
+    1
+   ]
+  },
+  "gfx/interface/mapicons/naval_mission_dominance_anim_arrows_good.dds": {
+   "sha256": "17dd5efa3906b4ca424cc43c51661a09232c5bf91a288f4fdab1672cae2c1b20",
+   "dds": [
+    54,
+    63,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/allied_plans_button.dds": {
+   "sha256": "161b6f30716b4bd14174b4fd3e84c5e01f3cd33a16d50ef42e2684863aa84c36",
+   "dds": [
+    44,
+    22,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/counters_color_mode_button.dds": {
+   "sha256": "da60942a2aecb71684a29f983aaab1727985d0b93f8189883d59d5a2c361cabb",
+   "dds": [
+    44,
+    22,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/day_night_toggle.dds": {
+   "sha256": "ade48972b761ca5e44045de61ba6eb1edb13fb0f1a382b0cad54b47e45b8584c",
+   "dds": [
+    44,
+    22,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/fog_of_war_toggle.dds": {
+   "sha256": "33c80674fa63fcbdd5588d68c614f85dea8c17d7dfed435d2d70fd63cee3e271",
+   "dds": [
+    44,
+    22,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/mapmode_button_all.dds": {
+   "sha256": "170b7caeb1c8c8cd5b30061c01131235728272d03d3cfc68465cff6181dd2256",
+   "dds": [
+    44,
+    21,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/mapmode_buttons_configure.dds": {
+   "sha256": "ec346dfa0a1a14869a71961ab9dd79ec8b8daf8c22a38ccdfb42f4d3798bbc9f",
+   "dds": [
+    44,
+    21,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/mapmode_buttons_deselected_big.dds": {
+   "sha256": "d44137e4b403656299765f957c5fae0b7a06a037d96b628816e527fd3dc18f39",
+   "dds": [
+    136,
+    31,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/mapmode_buttons_deselected_small.dds": {
+   "sha256": "856730dd270ddc8804971ee3d678319be7232ea4973f7c0320bd001d4a2261f3",
+   "dds": [
+    360,
+    18,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/mapmode_buttons_selected_big.dds": {
+   "sha256": "5f8274f86c73c570682c32399409fcccb69ca7906270503efbd72ceefad1b511",
+   "dds": [
+    136,
+    31,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/mapmode_buttons_selected_small.dds": {
+   "sha256": "9cf3b03ef108fbd62dfd6f067a22d9eb7a949e6c53dcd50c8d97fad418836ee0",
+   "dds": [
+    360,
+    18,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/player_counters_toggle.dds": {
+   "sha256": "aa896a9dd8ad11f24f59df619a28928cbc0f95b4f03b38d4055e8f43934ee888",
+   "dds": [
+    44,
+    22,
+    1
+   ]
+  },
+  "gfx/interface/mapmode/radar_toggle.dds": {
+   "sha256": "3ce070c90a62e2bb52e6b59393aa7769a977a19d242385c721e8a69660a66cce",
+   "dds": [
+    44,
+    22,
+    1
+   ]
+  },
+  "gfx/interface/naval_factory_icon.dds": {
+   "sha256": "33ebb7a4aaaa9cdd4cf39fe369de902736f69f4d2110dc6e44d31ac6f8e52842",
+   "dds": [
+    390,
+    18,
+    1
+   ]
+  },
+  "gfx/interface/naval_factory_icon_half.dds": {
+   "sha256": "30dfbe3ef5f932aca9d9f94c154663efae33be7a6a075eb92690d50c25d7af5c",
+   "dds": [
+    390,
+    18,
+    1
+   ]
+  },
+  "gfx/interface/naval_mine_progress_bad.dds": {
+   "sha256": "61c6cbf5e372c3103ff5ebda26026c26b2bec1f05a2376ffff10aa54faaebba5",
+   "dds": [
+    40,
+    7,
+    1
+   ]
+  },
+  "gfx/interface/naval_mine_progress_good.dds": {
+   "sha256": "9be608decaa9e7f1fdd0e1d84f41661556c0e82ecdcdb5bf0cd5272aa285a1dc",
+   "dds": [
+    40,
+    7,
+    1
+   ]
+  },
+  "gfx/interface/navalcombat/bar_progress_loose.dds": {
+   "sha256": "4465ecfff47d0992697a0cf286de678939d4e50e8e9f5f397c903089fcec7015",
+   "dds": [
+    351,
+    14,
+    1
+   ]
+  },
+  "gfx/interface/navalcombat/bar_progress_loose_157x14.dds": {
+   "sha256": "105e74c5e76d8909fd5709fea46c9e3a35f8c9ba168a2671aaa1f7da87d8ecb4",
+   "dds": [
+    157,
+    14,
+    1
+   ]
+  },
+  "gfx/interface/navalcombat/bar_progress_win.dds": {
+   "sha256": "d301b233216c407ea8bfc982b091068ed6fe5219ea3ceece293674483a9077c0",
+   "dds": [
+    351,
+    14,
+    1
+   ]
+  },
+  "gfx/interface/navalcombat/bar_progress_win_157x14.dds": {
+   "sha256": "6dc2e6b7f86b63127c2dfe56265fac8d4b2b9193c642ac470c54a60f952dd6b1",
+   "dds": [
+    157,
+    14,
+    1
+   ]
+  },
+  "gfx/interface/navieslist_bar_org.dds": {
+   "sha256": "0c244a17f42417474df3744681e9f8437cd085db9006e2f0cb64bc88fcdfaf76",
+   "dds": [
+    28,
+    6,
+    1
+   ]
+  },
+  "gfx/interface/navieslist_bar_str.dds": {
+   "sha256": "fba64d03a32b9eb0763de1df691f5e2e3c2bcd69d9d51d2cd8fb9157748e2f9b",
+   "dds": [
+    28,
+    6,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/all_missions.dds": {
+   "sha256": "cba6cfa4ff19d254e5ac5141e6915c94752c8682df67ca06dd0426f766c25428",
+   "dds": [
+    430,
+    34,
+    9
+   ]
+  },
+  "gfx/interface/naviesview/btn_convoy_escort.dds": {
+   "sha256": "9506f808c59dad2c8498d7e161d6319f4e14429144d196a572d4fa8ec80c9957",
+   "dds": [
+    162,
+    44,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/btn_convoy_raid.dds": {
+   "sha256": "0980293144d2bd7d8e9f253ff7a89d0e6ec5707d2f8b63f25347f8da1ecc228c",
+   "dds": [
+    162,
+    44,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/btn_hold.dds": {
+   "sha256": "5476cd211ead0323da77f3f7aa0caee4459c42cf27e6746f983fd35491ac2af4",
+   "dds": [
+    162,
+    44,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/btn_invasion.dds": {
+   "sha256": "b7a8de7069aac5c29515d19d1759479a3495a2e595aa107d9c87dbb6632ec8d0",
+   "dds": [
+    162,
+    44,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/btn_mines_planting.dds": {
+   "sha256": "0ae08f746b40f3da9ab5ea0e11f9e7da206ea5679139533aab6c819f9ece26b2",
+   "dds": [
+    162,
+    44,
+    8
+   ]
+  },
+  "gfx/interface/naviesview/btn_mines_sweeping.dds": {
+   "sha256": "5bfd250adf24d579f117994f387b5545c66b2d3c5eb46c608a80dcc298a46fb1",
+   "dds": [
+    162,
+    44,
+    8
+   ]
+  },
+  "gfx/interface/naviesview/btn_patrol.dds": {
+   "sha256": "82c78cd3c6b04f303a99c0ea5b5bcf48ad00b51fe457da598f3e4608a6b7be63",
+   "dds": [
+    162,
+    44,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/btn_search_and_destroy.dds": {
+   "sha256": "1243fb79ab428a9b3003adb802cf85b70513c891b212591e85feff670dc6318a",
+   "dds": [
+    162,
+    44,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/btn_strike_force.dds": {
+   "sha256": "1243fb79ab428a9b3003adb802cf85b70513c891b212591e85feff670dc6318a",
+   "dds": [
+    162,
+    44,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/ship_activity_mission_convoy_escort.dds": {
+   "sha256": "5d14257aa01099a0c4276cbfbea671627ed3ba7003d93c790a191e8b92ce61a6",
+   "dds": [
+    24,
+    24,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/ship_activity_mission_convoy_raiding.dds": {
+   "sha256": "5d01601f5cd9036c5a2fb8f17b9e22e885e149f434959065bed96c1db4375616",
+   "dds": [
+    24,
+    24,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/ship_activity_mission_mine_laying.dds": {
+   "sha256": "32ec2b2c232f0816e8bbfba0608d747bf7f78353befecb71757f5c67fc040e95",
+   "dds": [
+    24,
+    24,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/ship_activity_mission_mine_sweeping.dds": {
+   "sha256": "078c1fc4179ace8dc854b76ccd33464dedc2c21e77f3b0e2683f11ff06b5e381",
+   "dds": [
+    24,
+    24,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/ship_activity_mission_naval_invasion_support.dds": {
+   "sha256": "ac9dd63560dcc5d0e94b7b49391cdd9acb17275e2b84e10c58b03d217f216418",
+   "dds": [
+    24,
+    24,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/ship_activity_mission_patrol.dds": {
+   "sha256": "4a49d75222709baf2b9c55a20993d74e63e52bdea3d8cb02f7d4c0808c762371",
+   "dds": [
+    24,
+    24,
+    1
+   ]
+  },
+  "gfx/interface/naviesview/ship_activity_mission_strike_force.dds": {
+   "sha256": "5bb08ea2761f77c6859b8e2e9cc3fe69964fd86a79afe12ee43ee257421f0aa0",
+   "dds": [
+    24,
+    24,
+    1
+   ]
+  },
+  "gfx/interface/onmap_mission_unit_counter_types.dds": {
+   "sha256": "c3ddb49443c903ff7d2fd1ba1e49c5c1f9e1d6e2d77948c79ba83ae4d557d4d1",
+   "dds": [
+    260,
+    26,
+    9
+   ]
+  },
+  "gfx/interface/prod_progress_bar2.dds": {
+   "sha256": "9b85d9c28f6a599f6635c392ba1c9484d441e04072799034dfb1dd481d3413ae",
+   "dds": [
+    118,
+    63,
+    1
+   ]
+  },
+  "gfx/interface/prod_progress_bar2_red.dds": {
+   "sha256": "963ff8f001f2efb5b1e9fd6aaa23330e134967ba3c9b71a25058ae7cb8897dd2",
+   "dds": [
+    118,
+    63,
+    1
+   ]
+  },
+  "gfx/interface/softness_ratio_armour.dds": {
+   "sha256": "a66c1bd19a6040d17e4e71bddd6d2acf76314b9ccf8803230a9eea788527878d",
+   "dds": [
+    194,
+    11,
+    1
+   ]
+  },
+  "gfx/interface/softness_ratio_infantry.dds": {
+   "sha256": "6d47e24b6281a68db33014d0bb5028f2a21f44eb8e938cf150020d7364980ab0",
+   "dds": [
+    194,
+    11,
+    1
+   ]
+  },
+  "gfx/interface/strategicair/mission_types.dds": {
+   "sha256": "d1e8e79f27823f6645e8d97362905891ceba1d4d586e25fe6f580121b36822a1",
+   "dds": [
+    798,
+    29,
+    1
+   ]
+  },
+  "gfx/interface/strategicair/progress_bad.dds": {
+   "sha256": "5cb738249e81e7d7c55a78ec727ea7077df4eb8ea4e7f6fd6655e0badaba1145",
+   "dds": [
+    250,
+    14,
+    8
+   ]
+  },
+  "gfx/interface/strategicair/progress_good.dds": {
+   "sha256": "c7ce92f4ed58aa7ec9417af946560ec7cf237270adc422b8e88d14e5ebfb00cf",
+   "dds": [
+    250,
+    14,
+    8
+   ]
+  },
+  "gfx/interface/strategicnavy/progress_bad.dds": {
+   "sha256": "39506d2b3840c3568bb3b2eae3c5de77578a520b5b357c8193ec99d6e85dac66",
+   "dds": [
+    183,
+    11,
+    8
+   ]
+  },
+  "gfx/interface/strategicnavy/progress_good.dds": {
+   "sha256": "96f82888b1fcdfdad52a6076937c8bcf705be9825d533108ad4b3e074664bbfe",
+   "dds": [
+    183,
+    11,
+    8
+   ]
+  },
+  "gfx/interface/surrender_progress.dds": {
+   "sha256": "c402fba6f25b6679816e359f4ac24583fba49ecbceff94fcbb33f5a3a4e6cadb",
+   "dds": [
+    140,
+    4,
+    1
+   ]
+  },
+  "gfx/interface/surrender_progress_bg.dds": {
+   "sha256": "ae888520372c3835e8eb0bf40a11035ecacce829e5219eecf4e09ea300af25fb",
+   "dds": [
+    140,
+    4,
+    1
+   ]
+  },
+  "gfx/interface/topbar/airoverview_button.dds": {
+   "sha256": "6f9189b4e3e2d3be8d0de3ae4a0a691f69ab3dd9c4d5382f5881ceda7765524c",
+   "dds": [
+    76,
+    38,
+    1
+   ]
+  },
+  "gfx/interface/topbar/armyoverview_button.dds": {
+   "sha256": "0b2a37aa0c00902c20837c69a6a3d84ac0558c726c8182cf995292f4a115e621",
+   "dds": [
+    76,
+    38,
+    1
+   ]
+  },
+  "gfx/interface/topbar/navyoverview_button.dds": {
+   "sha256": "93c91ae23a2f455d5e8bfd9debe6d14692fa20666720a40df742251ae22d93bf",
+   "dds": [
+    76,
+    38,
+    1
+   ]
+  },
+  "gfx/interface/topbar/toolbar/construction_button.dds": {
+   "sha256": "4bd8242762fc76cc0c4478002967bb96e12e471c583e57be0a3396c74ea9a559",
+   "dds": [
+    110,
+    41,
+    1
+   ]
+  },
+  "gfx/interface/topbar/toolbar/deployment_button.dds": {
+   "sha256": "6e181dc046de66386ba82b3e0209f17a05af1e274ffee8c6deb8cc90bf32b2ea",
+   "dds": [
+    110,
+    41,
+    1
+   ]
+  },
+  "gfx/interface/topbar/toolbar/diplomacy_button.dds": {
+   "sha256": "05abcb383dcb5a9497149a39de024cc2ffcd14e8a2590b0862bfa32c7090a2ed",
+   "dds": [
+    110,
+    41,
+    1
+   ]
+  },
+  "gfx/interface/topbar/toolbar/intelligence_button.dds": {
+   "sha256": "b6a51dd76893848a0c137ea972804c7dbcda19f243042d889a9c576c20cca5da",
+   "dds": [
+    110,
+    41,
+    1
+   ]
+  },
+  "gfx/interface/topbar/toolbar/ledger_button.dds": {
+   "sha256": "253ac53af5d568cf595306b386907ef6eeb9a85d6aa49ea610e9d9ef4862e70b",
+   "dds": [
+    110,
+    41,
+    1
+   ]
+  },
+  "gfx/interface/topbar/toolbar/production_button.dds": {
+   "sha256": "0dde708206af1b673eb8f6188bc77625b3e57fa4e3cb405b57ed4829d2465993",
+   "dds": [
+    110,
+    41,
+    1
+   ]
+  },
+  "gfx/interface/topbar/toolbar/science_button.dds": {
+   "sha256": "c8aaee243e6950ada5405107f34ca52c5feb56d0b88faf8f77c9b5ad5cfe2f0c",
+   "dds": [
+    110,
+    41,
+    1
+   ]
+  },
+  "gfx/interface/topbar/toolbar/staff_office_button.dds": {
+   "sha256": "d7413348c8b82a1eecb5bb70cb2437733dd4b152079328a6c2fe8af47a4cd2ae",
+   "dds": [
+    110,
+    41,
+    1
+   ]
+  },
+  "gfx/interface/topbar/toolbar/topbar_decisionview_button.dds": {
+   "sha256": "2edd059fb82c8b45d6a7e14bb9057c35d80aee6460bca1001d0e618e1455e3ce",
+   "dds": [
+    110,
+    41,
+    1
+   ]
+  },
+  "gfx/interface/topbar/toolbar/trade_button.dds": {
+   "sha256": "e6226ba7e6d9b68198c5f10423097d38b643dafa108045eacc8315aacf413047",
+   "dds": [
+    110,
+    41,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/comm_group_plan_power_bar.dds": {
+   "sha256": "ab1fc06570071a224ce36d6510f67e5a5e61463b710c23a68348753c08c34bb7",
+   "dds": [
+    59,
+    6,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/comm_group_plan_power_bar_bg.dds": {
+   "sha256": "b52a99aacb82b1497387a24e769a22426faf1820e1dde8876946174a9ed21269",
+   "dds": [
+    59,
+    6,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/order_area_defense_btn.dds": {
+   "sha256": "06092efadc47a14fb1ad6290e47b8491bd8284f728ddecad2c1055c40c40f932",
+   "dds": [
+    70,
+    34,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/order_assign_units_btn.dds": {
+   "sha256": "b1852ebad3e705bf324d423022c95d36e42d68c5cc8b82cde48ea59dd2542405",
+   "dds": [
+    70,
+    34,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/order_delete_btn.dds": {
+   "sha256": "449b068a6f0d789e5dc2cd2974db69481ec34938af2b652ca45e7c49175ef776",
+   "dds": [
+    70,
+    34,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/order_draw_defence_btn.dds": {
+   "sha256": "5d2871e7c365cc9ce541fc8be875516d39876b5e5842b5bd5c4bd38dca23287d",
+   "dds": [
+    70,
+    34,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/order_draw_fallback_btn.dds": {
+   "sha256": "2829b825bb162b5cf855e04920aa6fd9678eee1e9ed7d3f17404ed8bac69971f",
+   "dds": [
+    70,
+    34,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/order_draw_naval_inv_btn.dds": {
+   "sha256": "3a8c3e7c6e0084d7dd2d2d81aba638b4978cd47f858aca900ec8d875f53ad4b2",
+   "dds": [
+    70,
+    34,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/order_draw_offence_btn.dds": {
+   "sha256": "23d93c470c4147bb2573e55e0559d3c6011cd884050bff70aaadbc886fbdb3f3",
+   "dds": [
+    70,
+    34,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/order_draw_paradrop_btn.dds": {
+   "sha256": "a72a16a40b3d8587cee939daf01e7d2dec9866be9de507a8f0215abb7876ad60",
+   "dds": [
+    70,
+    34,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/order_reshape_btn.dds": {
+   "sha256": "03f66dbd7e5a1171c9a48e7843dfff0b266432d06bb0c45969853bed45c003db",
+   "dds": [
+    70,
+    34,
+    1
+   ]
+  },
+  "gfx/interface/unitcontrol/order_unassign_units_btn.dds": {
+   "sha256": "096b576ca91481eb43910a52f494073fbea984ad8a477059da87048b061f1936",
+   "dds": [
+    70,
+    34,
+    1
+   ]
+  },
+  "gfx/interface/warscore_progressbar.dds": {
+   "sha256": "79f559d4563f1764635df14a529dab00d6958174ec68ff1ba1be6529074d6620",
+   "dds": [
+    579,
+    26,
+    1
+   ]
+  },
+  "gfx/interface/warscore_progressbar_bg.dds": {
+   "sha256": "adcb8cdf0cbdace3d5d316fec6eb378f66806c8fee9ecc229dacdccab094a799",
+   "dds": [
+    579,
+    26,
+    1
+   ]
+  },
+  "gfx/interface/warscore_progressbar_small.dds": {
+   "sha256": "b642dfbda3d7fe0ba480f8777214cbba6ca4710e7637ddc48b717de9734659dc",
+   "dds": [
+    260,
+    12,
+    1
+   ]
+  },
+  "gfx/maparrows/ag_default_mask.dds": {
+   "sha256": "13d8bfabf81a668fcd174c86c94bf322a070a776dce9d7c18a44579ec6d5b1a4",
+   "dds": [
+    160,
+    93,
+    1
+   ]
+  },
+  "gfx/maparrows/ag_default_pattern.dds": {
+   "sha256": "21f051339e426e91539a5285d9e74b7aadcb009d28db5bb8d2e7cc436f66186c",
+   "dds": [
+    160,
+    93,
+    1
+   ]
+  },
+  "gfx/maparrows/ag_default_unassigned_mask.dds": {
+   "sha256": "b8255d8cb543f2c60c94aafc6e11f413b72c42df0508612d2358daf36f4eb73c",
+   "dds": [
+    160,
+    93,
+    1
+   ]
+  },
+  "gfx/maparrows/ag_defensive_line.dds": {
+   "sha256": "43a87a61cf53fa4713579b6208cd2cd19b978ec6a5cde20673cc84b957c12ffc",
+   "dds": [
+    120,
+    34,
+    1
+   ]
+  },
+  "gfx/maparrows/ag_defensive_line_mask.dds": {
+   "sha256": "eafefd37636c952ad16fd2fcfad2d23fc5d061033060475351ea5a12a93a0937",
+   "dds": [
+    120,
+    34,
+    1
+   ]
+  },
+  "gfx/maparrows/ag_defensive_line_unassigned_mask.dds": {
+   "sha256": "3722e632e130f55be61244a7b150d5beeb42efe154191d2b1cdded76ab3b8073",
+   "dds": [
+    120,
+    34,
+    1
+   ]
+  },
+  "gfx/maparrows/ag_offensive_line.dds": {
+   "sha256": "7a9b3d4107ad48acb92e45798ab1c0985916ba9f3013e96ed670720de57439fe",
+   "dds": [
+    64,
+    46,
+    1
+   ]
+  },
+  "gfx/maparrows/ag_offensive_line_mask.dds": {
+   "sha256": "570f08f752f2abb306e7a38244e40634efeac959aed5896efe33e095bc9ee0bf",
+   "dds": [
+    64,
+    46,
+    1
+   ]
+  },
+  "gfx/maparrows/ag_offensive_line_unassigned_mask.dds": {
+   "sha256": "ca6ea44adc65b68b25b86db25e1aacacdd02b34ee73c1fe2f59f33e4d9063dc0",
+   "dds": [
+    64,
+    46,
+    1
+   ]
+  },
+  "gfx/maparrows/air_mission.dds": {
+   "sha256": "324a80093b534ceb27d18f1ba1d8a1dc496aaa9145f1e2a454770d6833f0ce72",
+   "dds": [
+    256,
+    128,
+    1
+   ]
+  },
+  "gfx/maparrows/air_mission_mask.dds": {
+   "sha256": "cb96c2cce38c31e3c38a3f635961ba6a702086c3e99ac0bf06e8ab2cf6affdeb",
+   "dds": [
+    256,
+    128,
+    1
+   ]
+  },
+  "gfx/maparrows/blitz_mask.dds": {
+   "sha256": "2d2e6b96b0eb91589bdfb514edb592cf9fd2e3654dd21ae40bd2ce5ba1d582ab",
+   "dds": [
+    400,
+    178,
+    1
+   ]
+  },
+  "gfx/maparrows/blitz_pattern.dds": {
+   "sha256": "d9780716251d3c3973d5a31f5f5b2f8ad5afe0dc7403b8319e1449aeaedc890d",
+   "dds": [
+    400,
+    178,
+    1
+   ]
+  },
+  "gfx/maparrows/blitz_unassigned_mask.dds": {
+   "sha256": "d5f997277b4fb76dcc79af9a8302f4fddf08925a8b31dae63b5d739cb05b873e",
+   "dds": [
+    400,
+    178,
+    1
+   ]
+  },
+  "gfx/maparrows/default_mask.dds": {
+   "sha256": "1edf9d645c5983a371ed2e2153f54bbed3b22bcddf33b78e1f3bd06bfdfbd5ef",
+   "dds": [
+    256,
+    128,
+    1
+   ]
+  },
+  "gfx/maparrows/default_pattern.dds": {
+   "sha256": "50b9b996d73a83fad5b5229b55b6b5fb7565ef767134a21199c03dd5cff7e132",
+   "dds": [
+    256,
+    128,
+    1
+   ]
+  },
+  "gfx/maparrows/default_unassigned_mask.dds": {
+   "sha256": "26a4ab94ce1c8af8f0ab043ed2540343ba0c335462e8bd34f1d298c1a73d6056",
+   "dds": [
+    256,
+    128,
+    1
+   ]
+  },
+  "gfx/maparrows/defensive_line.dds": {
+   "sha256": "c3a6104a908d1dea75ad6913ec7da4bfef259c99730e8cd1e65f3936658dcb4e",
+   "dds": [
+    120,
+    48,
+    1
+   ]
+  },
+  "gfx/maparrows/defensive_line_mask.dds": {
+   "sha256": "f2da066577e05927a201ad2ab9fefb92066e61a27fda469ebe0927cf926c1fd1",
+   "dds": [
+    120,
+    48,
+    1
+   ]
+  },
+  "gfx/maparrows/defensive_line_unassigned_mask.dds": {
+   "sha256": "23deba0c8eb517d93a841b0e64cb9b670709790a552f17fe65e4552c223daa80",
+   "dds": [
+    120,
+    48,
+    1
+   ]
+  },
+  "gfx/maparrows/maparrows.txt": {
+   "sha256": "ccdee05cd75e1e471ff5382e24ae590d7c1cc5738ca4db01e29314ea7a6289ff"
+  },
+  "gfx/maparrows/offensive_line.dds": {
+   "sha256": "fae5c69cd08703b947c4ec4e88515b7d7a444cd9db5d28db9aedf9a3c7c4cd44",
+   "dds": [
+    64,
+    37,
+    1
+   ]
+  },
+  "gfx/maparrows/offensive_line_mask.dds": {
+   "sha256": "ec0850d3f5bdf023b7d1fd8caf2cb2b74644e280a7c6d1caea4c97b1da2b8bb3",
+   "dds": [
+    64,
+    37,
+    1
+   ]
+  },
+  "gfx/maparrows/offensive_line_unassigned_mask.dds": {
+   "sha256": "f561e7bcf7c2d99a94cf6f34bb4002aee1d31376a7beaa8ae40690ffb6171e31",
+   "dds": [
+    64,
+    37,
+    1
+   ]
+  },
+  "gfx/particles/environment/lightning_storm.asset": {
+   "sha256": "3774e719ae01db643b9df401361421afb7704bf5486bdcdd2031015c1456b112"
+  },
+  "gfx/particles/environment/lightning_storm_clouds.asset": {
+   "sha256": "6bce08fd1fdfcfadfdc63f7f15f3251fbe272f4ce72152fb759ad46c1902d8bf"
+  },
+  "gfx/particles/environment/lightning_storm_small.asset": {
+   "sha256": "6a278f59a726305cacbee8df43c50c38424d06cfc820986f518504af8a71fefe"
+  },
+  "gfx/particles/environment/lightning_storm_small_clouds.asset": {
+   "sha256": "3b3d32ec155247c11c4b36b026b78ea13066f040cb099fc93fbd0b754d7bd31d"
+  },
+  "gfx/particles/environment/rain.asset": {
+   "sha256": "2ece2c70eadef9f2c6eb5adef8d08c30e5ffcab17b87d7c7121c008072c913ca"
+  },
+  "gfx/particles/environment/rain_clouds.asset": {
+   "sha256": "68c3d851fb3267076a77646201b014ff22c8812b0ce1b670af90da92c3196267"
+  },
+  "gfx/particles/environment/rain_small.asset": {
+   "sha256": "7a5907a239b04ed4da7dbf62f9f2a36d351f0a0df23a304866f0ac6d3e21d7ff"
+  },
+  "gfx/particles/environment/rain_small_clouds.asset": {
+   "sha256": "4674b196f9a05792dca8b5d659a76c5a377d0e33f0ce3fe08d38fe00a3d29afa"
+  },
+  "gfx/particles/environment/sandstorm.asset": {
+   "sha256": "c09fda449922576221df839e39a7018eeba77b6b044c8d861ac406a914c60d6f"
+  },
+  "gfx/particles/environment/snow.asset": {
+   "sha256": "a86823eaa490fadd0b3ca34272c72a8b20ed6caf027558e432b4018513166af8"
+  },
+  "gfx/particles/environment/snow_clouds.asset": {
+   "sha256": "52a77963f8492c79fe426eb48065cc81951e96e815613f4fca5533bdb4d92f72"
+  },
+  "gfx/particles/environment/snow_small.asset": {
+   "sha256": "4ff8b578bfa2dd6109e09787618934f5d9db132b827f5f0d206490f1f5690ce5"
+  },
+  "gfx/particles/environment/snow_small_clouds.asset": {
+   "sha256": "5e0a837c2f15c0236a2835dd505bf7520ae6d3a1c536dabfb4b1553faa061284"
+  },
+  "gfx/particles/environment/snow_storm.asset": {
+   "sha256": "634d5edfa78b48aa257c962bfde3d2d9c1c66669e5442c8a12cef1c19ae0639b"
+  },
+  "gfx/particles/environment/snow_storm_clouds.asset": {
+   "sha256": "51c0133689bf857bdbb0c14ab3b7ca65e9c535e9f611a36abdd1117e4663e4e6"
+  },
+  "gfx/particles/environment/snow_storm_small.asset": {
+   "sha256": "0dac3cf416006afb73c97d93843a34358803e5d2c271f10ef7624f96d72b7182"
+  },
+  "gfx/particles/environment/snow_storm_small_clouds.asset": {
+   "sha256": "e2d053899bb31cb85da546b7e3aeb448ee6e6d599db3452b301accff566fa268"
+  },
+  "gfx/texticons/air_experience_20x20.dds": {
+   "sha256": "c59e1f12f83c5257ac38a0f5f25175f715ce81d85825546487603662a223ed4b",
+   "dds": [
+    14,
+    14,
+    1
+   ]
+  },
+  "gfx/texticons/army_experience_20x20.dds": {
+   "sha256": "0003ba60f5089d8255a1756f86dc323503615971a54242670a772987d8c3c01b",
+   "dds": [
+    14,
+    14,
+    1
+   ]
+  },
+  "gfx/texticons/navy_experience_20x20.dds": {
+   "sha256": "e5bb671ac1a37845aca23f4dd90ead85f4f96e4250392db1ba021298a2494f87",
+   "dds": [
+    14,
+    14,
+    1
+   ]
+  },
+  "map/terrain/border_country_0.dds": {
+   "sha256": "ffd919bfc879f9554e25650622049f8088ce74ccf107f351a0ce8acc6e0e3737",
+   "dds": [
+    256,
+    128,
+    9
+   ]
+  },
+  "map/terrain/border_province_0.dds": {
+   "sha256": "6a8f8dcec47c846c5a6575f73069340a9b53a54bdb1b5131b557291f3deae9f8",
+   "dds": [
+    64,
+    32,
+    7
+   ]
+  },
+  "map/terrain/border_sea_0.dds": {
+   "sha256": "12dc94892bb2ada87d1730451e55d6e6d790f34c8c45770012310073941fe682",
+   "dds": [
+    64,
+    32,
+    7
+   ]
+  },
+  "map/terrain/border_sea_region_0.dds": {
+   "sha256": "b414b8fa4276f1740087406b09580e3a841c4079955b4e36037b4e62d3dbae50",
+   "dds": [
+    64,
+    32,
+    7
+   ]
+  },
+  "map/terrain/border_state_0.dds": {
+   "sha256": "23ca52acca4cdfcc0f90cc989ae108201c232715e3509e108c69dad3bfa8ca7c",
+   "dds": [
+    128,
+    64,
+    8
+   ]
+  },
+  "map/terrain/reflection.dds": {
+   "sha256": "e06cf3a5bfcb51cdf63ce8b63557f65050542e7b2fc55b8e2608b169726f3abd",
+   "dds": [
+    256,
+    256,
+    9
+   ]
+  }
+ }
+}

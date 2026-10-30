@@ -1,0 +1,18 @@
+1.19.4.0-1 — First release of the maintained version
+
+[b]Fixed[/b]
+[list]
+[*]Map-arrow shader rebuilt on the 1.19 shader: restores the three effects the engine requires (raid arrows, see-through plan arrows) — fixes crashes and invisible arrows.
+[*]12 missing arrow/symbol types restored (deployed-general / HQ lines, commander ability range, raid arrows).
+[*]Reflection texture is now a valid cube map (same black, non-reflective look; no rendering errors).
+[*]Deployment and fuel bars resized to the current UI.
+[*]10 map/UI icons now have full mip chains (smoother when UI-scaled).
+[/list]
+[b]Removed[/b]
+[list]
+[*]15 obsolete files (8 identical to vanilla, 7 never loaded by the game).
+[/list]
+[b]Verified[/b]
+[list]
+[*]Tested in-game on 1.19.4 (base game; all DLC definitions verified file by file): no mod-related entries in error.log; vanilla checksum kept (Ironman achievements & multiplayer OK).
+[/list]

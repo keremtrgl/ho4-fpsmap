@@ -1,0 +1,16 @@
+1.19.4.0-2 — War-tested, consistent arrows, colour-blind add-on
+
+[b]Improved[/b]
+[list]
+[*]Raid arrows (ballistic, air, naval, land) now scale with arrow length like air-mission arrows, so short raids no longer draw oversized.
+[*]General / HQ front lines flow at the calmer FPS Map speed (0.6×), matching the mod's other plan arrows.
+[/list]
+[b]New[/b]
+[list]
+[*]Optional add-on: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828959483][b]FPS Map – Colour-blind Arrows[/b][/url]. A measured army-arrow palette: the worst-case difference between your first 16 armies' colours rises from 0.9 to 9.8 (CIEDE2000) for deuteranopia, 1.8 → 9.3 for protanopia, 2.7 → 10.7 for tritanopia.
+[/list]
+[b]Verified[/b]
+[list]
+[*]Full war test on 1.19.4, base game (Germany vs Poland, front lines, offensives, army-group plans, combat icons): no mod-related entries in error.log.
+[*]Millennium Dawn 2.0.3: compatible — load FPS Map [b]after[/b] Millennium Dawn. All 25 shared files checked (art-only, same layout or vanilla copies; FPS Map also replaces MD's invalid reflection texture with a valid one).
+[/list]

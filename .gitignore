@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Copies of Paradox's own game files, kept locally for patch diffs only
+tools/vanilla_snapshot/
+
+# Machine-specific output
+tools/patch_report.txt
+test/
+
+# Private drafts
+workshop/comment_reply.txt

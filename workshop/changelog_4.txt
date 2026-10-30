@@ -1,0 +1,21 @@
+1.19.4.0-4 — Calmer fog of war, two add-ons, support for the "STRATEGICREGION_xx" bug
+
+[b]Improved[/b]
+[list]
+[*][b]Calmer fog of war up close.[/b] Fog stays exactly where and as strong as in vanilla (its opacity is untouched, so you lose no information), but the glaring near-white wisps are now a soft cool grey with a narrower bright range, and they drift at 40% speed. Before/after image in the gallery.
+[*][b]The Workshop title no longer resets.[/b] The mod's internal name now matches its Workshop title, so the launcher stops renaming it to "FPS Map (Updated)" on every update.
+[/list]
+[b]Add-ons[/b]
+[list]
+[*][b]Colour-blind Add-on[/b] (formerly Colour-blind Arrows) now also turns 9 red/green indicator pairs and the war score bar blue/orange: combat, air and naval superiority, mines, naval dominance arrows, decisions, surrender, production. Worst deuteranopia case: 3.4 → 27.7 (CIEDE2000).
+[*][b]New: Calm Water Add-on[/b] — softer sun glare on the sea. Separate on purpose: Millennium Dawn replaces the same water shader, so don't combine the two.
+[/list]
+[b]Help[/b]
+[list]
+[*]New FAQ entry: regions showing as "STRATEGICREGION_49" are caused by leftovers of the game's debug map editor in your Documents folder, not by this mod — the FAQ says exactly which files to move.
+[/list]
+[b]Verified[/b]
+[list]
+[*]In game on 1.19.4 with FPS Map + both add-ons: game checksum identical to vanilla (Ironman & multiplayer safe), no mod-related entries in error.log.
+[*]Release checks: every changed file rebuilt from 1.19.4 and verified (147 + 26 + 3 files), lint clean, still compatible with Millennium Dawn 2.0.3.
+[/list]

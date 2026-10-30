@@ -1,0 +1,21 @@
+1.19.4.1-5 — Lighter water reflection map, 1.19.4.1, descriptions in 9 languages
+
+[b]Optimised[/b]
+[list]
+[*][b]2 MB less video memory.[/b] The water/river reflection map is pure black (that is what removes the sky reflection). It was still stored at the game's full 256×256 size with 9 mip levels on all six cube faces. A black cube map looks identical at any size, so it is now 4×4 per face: 2 MB → 632 bytes. Less VRAM and less texture bandwidth on every water and river pixel, with exactly the same image.
+[/list]
+[b]Updated[/b]
+[list]
+[*]Rebuilt and verified against 1.19.4.1. None of the 165 game files this mod is built from changed in that patch.
+[*]Tested in game on 1.19.4.1 with every DLC enabled: loads cleanly, water renders as before, no error-log entry mentions any file of this mod.
+[*]Description now available in Turkish, German, French, Spanish (Spain and Latin America), Russian, Polish, Simplified Chinese and Brazilian Portuguese. Steam shows it in your client language automatically.
+[*]Source code, build tools and the full technical changelog are now public on GitHub (link in the description).
+[/list]
+[b]Checked, deliberately not changed[/b]
+[list]
+[*]The thinner Mlecz arrow art (blitz and army-group arrows) differs in pixel size from vanilla. Arrow textures are stretched along the arrow and the art is tuned together with its own head/body sizes, so resizing it to vanilla would distort the arrowheads. It stays as designed.
+[/list]
+[b]Still safe[/b]
+[list]
+[*]No file in a checksummed folder (checked against the game's own checksum manifest): Ironman achievements and multiplayer unaffected. Add or remove at any time. Add-ons need no update.
+[/list]

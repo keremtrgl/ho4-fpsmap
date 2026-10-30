@@ -113,13 +113,16 @@ notes.append(f'{len(particles)} weather particle files fully tuned')
 
 # workshop texts (English in workshop/, translations in workshop/i18n/<language>/)
 WS = os.path.join(ROOT, 'workshop')
-STEAM_MAX = 8000  # Workshop description limit, in characters
+# Workshop description limit: 8000 bytes of UTF-8 as the browser submits it
+# (newlines become CRLF). Cyrillic is 2 bytes a letter, Chinese 3.
+STEAM_MAX = 8000
+steam_size = lambda t: len(t.encode('utf-8')) + t.count('\n')
 for f in sorted(rel_files(WS)):
     if not f.endswith(('.bbcode', '.txt')) or f == 'comment_reply.txt':
         continue
     t = open(os.path.join(WS, f), encoding='utf-8').read()
-    if f.endswith('description.bbcode') and len(t) > STEAM_MAX:
-        problems.append(f'workshop/{f}: {len(t)} characters, Steam allows {STEAM_MAX}')
+    if f.endswith('description.bbcode') and steam_size(t) > STEAM_MAX:
+        problems.append(f'workshop/{f}: {steam_size(t)} bytes as submitted, Steam allows {STEAM_MAX}')
     if f.startswith('i18n/'):
         # a translation keeps every link and the section/table layout of the English page
         en = open(os.path.join(WS, os.path.basename(f)), encoding='utf-8').read()

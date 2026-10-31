@@ -639,7 +639,7 @@ PixelShader =
 	//-------------------------------
 	// Common lighting functions ----
 	//-------------------------------
-	void CalculateSunLight(LightingProperties aProperties, float aShadowTerm, float3 vLightSourceDirection, out float3 aDiffuseLightOut, out float3 aSpecularLightOut )
+	void CalculateSunLightBase(LightingProperties aProperties, float aShadowTerm, float3 vLightSourceDirection, out float3 aDiffuseLightOut, out float3 aSpecularLightOut ) // FPS Map
 	{
 		float vDayFactor = 1.0f - DayNightFactor( CalcGlobeNormal( aProperties._WorldSpacePos.xz ) );
 		float vNightFactor = DayNightFactor( CalcGlobeNormal( aProperties._WorldSpacePos.xz ), MOON_FEATHER_MIN, MOON_FEATHER_MAX );
@@ -661,10 +661,17 @@ PixelShader =
 		aSpecularLightOut *= SunSpecularIntensity;
 	}
 
+	// FPS Map: water sun glare at half strength
+	void CalculateSunLight(LightingProperties aProperties, float aShadowTerm, float3 vLightSourceDirection, out float3 aDiffuseLightOut, out float3 aSpecularLightOut )
+	{
+		CalculateSunLightBase(aProperties, aShadowTerm, vLightSourceDirection, aDiffuseLightOut, aSpecularLightOut );
+		aSpecularLightOut *= 0.5f;
+	}
+
 	void CalculateSunLight(LightingProperties aProperties, float aShadowTerm, out float3 aDiffuseLightOut, out float3 aSpecularLightOut )
 	{
 		float3 vLightSourceDirection = CalculateSunDirection( aProperties._WorldSpacePos );
-		CalculateSunLight(aProperties, aShadowTerm, vLightSourceDirection, aDiffuseLightOut, aSpecularLightOut );
+		CalculateSunLightBase(aProperties, aShadowTerm, vLightSourceDirection, aDiffuseLightOut, aSpecularLightOut ); // FPS Map
 	}
 
 	void CalculatePointLight(PointLight aPointlight, LightingProperties aProperties, inout float3 aDiffuseLightOut, inout float3 aSpecularLightOut)

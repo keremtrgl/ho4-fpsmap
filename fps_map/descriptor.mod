@@ -1,4 +1,4 @@
-version="1.19.4.1-5"
+version="1.19.4.1-6"
 tags={
 	"Map"
 	"Graphics"

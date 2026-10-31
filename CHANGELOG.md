@@ -4,6 +4,20 @@ Rebuilt against Hearts of Iron IV 1.19.4, compatible with every DLC up to Thunde
 After a game patch: `python -I tools/patch_check.py --install`
 Compatibility report: `python -I tools/conflicts.py`
 
+## 1.19.4.1-6 — calmer water with high-quality shaders
+All three edits only touch code paths that run with "High quality shaders" on; the low-quality
+look is unchanged. Still no file in a checksummed folder.
+- `standardfuncsgfx.fxh`: the sun overload that takes an explicit light direction is only called
+  by the water shader. It now wraps `CalculateSunLightBase` and halves the specular, so the
+  camera-locked white sun hotspot no longer turns shallow seas (Persian Gulf, Gulf of Suez)
+  chalk-white. Land, rivers, trees and units keep vanilla light. Done here rather than in
+  `pdxwater.shader`, so Millennium Dawn's water shader gets it too. In game: hotspot peak
+  brightness 213–255 → 133.
+- `pdxmap.shader`: the underwater pass lets only 25% of the lit seabed through
+  (`vWaterAlpha * 0.25f`); deep sea unchanged.
+- `constants.fxh`: distance haze `FOG_MAX` 0.35 → 0.18, `FOG_COLOR` (0.12, 0.28, 0.6) →
+  (0.05, 0.12, 0.26), so the tilted camera's upper screen is no longer washed pale blue.
+
 ## 1.19.4.1-5 — lighter reflection map, 1.19.4.1 rebuild
 - Rebuilt against 1.19.4.1; all 165 vanilla source files unchanged since 1.19.4.0.
 - `map/terrain/reflection.dds`: the black cube map had vanilla's 256×256×6 faces with 9 mips

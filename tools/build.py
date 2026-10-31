@@ -32,7 +32,7 @@ NAME_WATER = 'FPS Map - Calm Water Add-on'
 WORKSHOP_ID = '3828926440'
 WORKSHOP_ID_CB = '3828959483'
 WORKSHOP_ID_WATER = '3829377291'
-REVISION = 5 # bump for every Workshop update on the same game version
+REVISION = 6 # bump for every Workshop update on the same game version
 
 # Files dropped from the build:
 #  - byte-identical to vanilla: overriding them only freezes old vanilla art
@@ -64,6 +64,7 @@ GENERATED = {
     'thumbnail.png',
     'gfx/FX/constants.fxh',
     'gfx/FX/river.shader',
+    'gfx/FX/pdxmap.shader',
     'gfx/FX/maparrow.shader',
     'gfx/maparrows/maparrows.txt',
     'map/terrain/reflection.dds',
@@ -190,7 +191,19 @@ write('gfx/FX/constants.fxh', patch(read(os.path.join(GAME, 'gfx/FX/constants.fx
     ('SNOW_OPACITY_MIN\t\t\t= 0.95f;', 'SNOW_OPACITY_MIN\t\t\t= 0.0f; // FPS Map: no snow up close'),
     # Sea ice: same hue, about 40% less glare.
     ('ICE_COLOR \t\t\t\t\t= float3( 0.5f, 0.6f, 0.9f );', 'ICE_COLOR \t\t\t\t\t= float3( 0.30f, 0.36f, 0.54f ); // FPS Map'),
+    # High-quality shaders only: distance haze washed the tilted camera's upper
+    # screen in pale blue. Half as strong, and a deep blue that matches the sea.
+    ('FOG_COLOR \t\t\t\t\t= float3( 0.12, 0.28, 0.6 );', 'FOG_COLOR \t\t\t\t\t= float3( 0.05, 0.12, 0.26 ); // FPS Map'),
+    ('FOG_MAX \t\t\t\t\t= 0.35f;', 'FOG_MAX \t\t\t\t\t= 0.18f; // FPS Map'),
 ], 'constants.fxh'))
+
+# pdxmap.shader: with high-quality shaders the sea refracts the lit seabed, so
+# shallow seas (Persian Gulf, Azov, coasts) glowed white-grey through the dark
+# water. Let only a quarter of the seabed through; deep sea is unchanged.
+write('gfx/FX/pdxmap.shader', patch(read(os.path.join(GAME, 'gfx/FX/pdxmap.shader')), [
+    ('vOut = lerp( waterColorTint, vOut, vWaterAlpha );',
+     'vOut = lerp( waterColorTint, vOut, vWaterAlpha * 0.25f ); // FPS Map: no seabed glare'),
+], 'pdxmap.shader'))
 
 # standardfuncsgfx.fxh: the frost tint ignored zoom entirely (a 40% floor on
 # every wintry tile). Scale it like the snow itself: vanilla at the strategic
@@ -198,6 +211,23 @@ write('gfx/FX/constants.fxh', patch(read(os.path.join(GAME, 'gfx/FX/constants.fx
 write('gfx/FX/standardfuncsgfx.fxh', patch(read(os.path.join(GAME, 'gfx/FX/standardfuncsgfx.fxh')), [
     ('( SNOW_FROST_MIN_EFFECT * vMinSnow )',
      '( SNOW_FROST_MIN_EFFECT * vMinSnow * saturate( vOpacity / SNOW_OPACITY_MAX ) ) /* FPS Map */'),
+    # High-quality shaders only: a white sun hotspot follows the camera over
+    # the sea and turns shallow seas (Persian Gulf) chalk-white. Only water
+    # passes its own sun direction (the overload below), so halve the specular
+    # there; land, rivers, trees and units keep vanilla light. Lives here, not
+    # in pdxwater.shader, so Millennium Dawn's water shader gets it too.
+    ('void CalculateSunLight(LightingProperties aProperties, float aShadowTerm, float3 vLightSourceDirection, out float3 aDiffuseLightOut, out float3 aSpecularLightOut )',
+     'void CalculateSunLightBase(LightingProperties aProperties, float aShadowTerm, float3 vLightSourceDirection, out float3 aDiffuseLightOut, out float3 aSpecularLightOut ) // FPS Map'),
+    ('\tvoid CalculateSunLight(LightingProperties aProperties, float aShadowTerm, out float3 aDiffuseLightOut, out float3 aSpecularLightOut )',
+     '\t// FPS Map: water sun glare at half strength\n'
+     '\tvoid CalculateSunLight(LightingProperties aProperties, float aShadowTerm, float3 vLightSourceDirection, out float3 aDiffuseLightOut, out float3 aSpecularLightOut )\n'
+     '\t{\n'
+     '\t\tCalculateSunLightBase(aProperties, aShadowTerm, vLightSourceDirection, aDiffuseLightOut, aSpecularLightOut );\n'
+     '\t\taSpecularLightOut *= 0.5f;\n'
+     '\t}\n\n'
+     '\tvoid CalculateSunLight(LightingProperties aProperties, float aShadowTerm, out float3 aDiffuseLightOut, out float3 aSpecularLightOut )'),
+    ('\t\tCalculateSunLight(aProperties, aShadowTerm, vLightSourceDirection, aDiffuseLightOut, aSpecularLightOut );',
+     '\t\tCalculateSunLightBase(aProperties, aShadowTerm, vLightSourceDirection, aDiffuseLightOut, aSpecularLightOut ); // FPS Map'),
 ], 'standardfuncsgfx.fxh'))
 
 # fow.fxh: fog of war keeps WHERE and HOW STRONG it is (alpha untouched), but

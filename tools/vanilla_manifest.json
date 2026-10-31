@@ -13,6 +13,9 @@
   "gfx/FX/maparrow.shader": {
    "sha256": "ec55c6d982e3306476993f8133af7f11499ebc7f4239d3223dd3122c5389a8e6"
   },
+  "gfx/FX/pdxmap.shader": {
+   "sha256": "c108c508302d45170c7a1e4cf094d1bb09d62ceb91f8dbc2b0cebd877959ef89"
+  },
   "gfx/FX/pdxwater.shader": {
    "sha256": "3ec59311e986ace1785cf604ee46ef1930cdd51b3b085fb380a9d89d9bc53ace"
   },

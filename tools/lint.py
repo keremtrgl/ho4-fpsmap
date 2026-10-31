@@ -94,8 +94,9 @@ for src, installed in MODS.items():
 
 # every documented edit is in place, exactly once per expected count
 EXPECT = {
-    'gfx/FX/constants.fxh': 8, 'gfx/FX/river.shader': 1, 'gfx/FX/maparrow.shader': 8,
-    'gfx/FX/standardfuncsgfx.fxh': 1, 'gfx/maparrows/maparrows.txt': 14, 'gfx/FX/fow.fxh': 4,
+    'gfx/FX/constants.fxh': 10, 'gfx/FX/river.shader': 1, 'gfx/FX/maparrow.shader': 8,
+    'gfx/FX/pdxmap.shader': 1,
+    'gfx/FX/standardfuncsgfx.fxh': 4, 'gfx/maparrows/maparrows.txt': 14, 'gfx/FX/fow.fxh': 4,
 }
 for rel, n in EXPECT.items():
     t = open(os.path.join(ROOT, 'fps_map', rel), encoding='utf-8-sig').read()

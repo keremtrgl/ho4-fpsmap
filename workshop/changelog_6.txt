@@ -1,0 +1,12 @@
+1.19.4.1-6 — Calmer water with "High quality shaders"
+
+[b]Fixed (only with High quality shaders on — the low-quality look is unchanged)[/b]
+[list]
+[*][b]No more chalk-white shallow seas.[/b] With high-quality shaders the sea draws a white sun hotspot that follows the camera. Over shallow, narrow water (Persian Gulf, Gulf of Suez, Azov) it turned the sea almost white. The sun glare on water is now half as strong (measured in game: peak brightness 213–255 → 133). Land, rivers, trees and units keep vanilla lighting. Also works with Millennium Dawn's own water shader.
+[*][b]Darker seabed in shallow water.[/b] Only a quarter of the lit seabed shows through the sea; deep water is unchanged.
+[*][b]Less pale-blue haze[/b] at the top of the screen when the camera is tilted: half as strong, in a deep blue that matches the sea.
+[/list]
+[b]Still safe[/b]
+[list]
+[*]All edits are shader files outside every checksummed folder: Ironman achievements and multiplayer unaffected. Add or remove at any time. Add-ons need no update.
+[/list]

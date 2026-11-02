@@ -1,4 +1,8 @@
 [h1]FPS Map — обновлено для 1.19 (Ironman и MP)[/h1]
+[h2]Наш Discord[/h2]
+[b]► [url=https://discord.gg/69XF65D2sA]Anatolian Workshop Discord[/url][/b]
+Идеи, баги и новости всех наших модов.
+
 
 [b]Чище, чётче и легче — карта, заново собранная для HoI4 1.19.x и всех DLC до Thunder at Our Gates.[/b]
 
@@ -26,10 +30,21 @@
 [tr][th]Мультиплеер[/th][td]✔ Да — checksum прежний, без рассинхрона[/td][/tr]
 [tr][th]Сохранения[/th][td]✔ Можно включить или убрать в любой момент[/td][/tr]
 [tr][th]Millennium Dawn[/th][td]✔ Проверено на 2.0.3 — FPS Map [b]после[/b] MD[/td][/tr]
-[tr][th]Глобальные моды[/th][td]Моды с [i]gfx/FX/maparrow.shader[/i] или [i]maparrows.txt[/i] грузите [b]после[/b] этого[/td][/tr]
+[tr][th]Другие моды[/th][td]См. порядок загрузки ниже[/td][/tr]
 [/table]
 
-[b]Почему безопасно?[/b] Checksum учитывает только [i]common/, events/, history/[/i] и данные карты. Мод их не трогает — только шейдеры, текстуры и стрелки, — поэтому checksum как в ванилле (проверено в игре).
+[h2]🔗 Порядок загрузки[/h2]
+В лаунчере мод [b]ниже[/b] в плейсете грузится позже и побеждает в общих файлах.
+[table]
+[tr][th]Мод[/th][th]Порядок[/th][th]Примечание[/th][/tr]
+[tr][td]Millennium Dawn[/td][td]MD выше, FPS Map ниже[/td][td]Проверено на 2.0.3. «Спокойную воду» с MD не включать.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816496697]Globe Mod[/url][/td][td]FPS Map выше, Globe ниже[/td][td]Глобус работает полностью; FPS Map теряет лишь плоские стрелки, снег на реках издалека и тон мелководья. «Спокойную воду» с Globe не включать.[/td][/tr]
+[tr][td]Старая FPS Map (Mlecz)[/td][td]✖ Отключить[/td][td]Те же файлы.[/td][/tr]
+[tr][td]UI, юниты, флаги, фокусы, оверхолы[/td][td]Любой[/td][td]Historical Army Insignia и Focus Tree Swapper — без общих файлов; 1984 Revived — 3 общих значка.[/td][/tr]
+[tr][td]Другие шейдерные моды[/td][td]На выбор[/td][td]Общий файл берётся у нижнего мода; остальное от FPS Map работает.[/td][/tr]
+[/table]
+
+[b]Почему безопасно?[/b] Checksum учитывает только [i]common/, events/, history/[/i] и данные карты; мод их не трогает (проверено в игре).
 
 [hr][/hr]
 
@@ -42,7 +57,6 @@
 [*][b]Значки:[/b] 10 значков получили полные mip-цепочки.
 [*][b]Чистка:[/b] убрано 15 лишних файлов.
 [/list]
-Каждый файл собирается из [i]текущего[/i] ванильного с правками мода — ничего нового от Paradox не теряется.
 
 [hr][/hr]
 
@@ -67,22 +81,10 @@
 [b]FPS вырастет?[/b]
 Меньше работы на пиксель для воды, рек и стрелок. Заметнее на средних и ноутбучных GPU в больших войнах. Поздние тормоза CPU не лечит — это симуляция.
 
-[b]Геймплей меняется?[/b]
-Нет, только визуал.
-
 [b]Другие моды карты?[/b]
 Да, если не меняют те же файлы. Нужный мод ставьте ниже.
 
 [b]Регионы называются «STRATEGICREGION_49»?[/b]
-Текста в моде нет. Это остатки редактора Nudger в папке пользователя. Перенесите содержимое [i]localisation[/i] и [i]map[/i] из [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] (сохраните копию). Обычно это [i]localisation/english/strategic_region_names_l_english.yml[/i] со строками [i]KEY:-1 "..."[/i]; а [i]map/unitstacks.txt[/i] меняет checksum.
-
-[hr][/hr]
-
-[h2]🙏 Авторы[/h2]
-[list]
-[*]Оригинал и графика: [b]Mlecz[/b] — [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map[/url]. Весь дизайн — его работа.
-[*]Обновление 1.19: эта страница.
-[*]Исходники и changelog: [url=https://github.com/keremtrgl/ho4-fpsmap]GitHub[/url].
-[/list]
+Нет — текста в моде нет. Остатки Nudger в [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] перекрывают все моды: перенесите содержимое [i]localisation[/i] и [i]map[/i].
 
 Ошибка? Напишите версию игры, список DLC и приложите [i]Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log[/i].

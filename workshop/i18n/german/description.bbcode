@@ -1,4 +1,8 @@
 [h1]FPS Map — Aktualisiert für 1.19 (Ironman- & Multiplayer-sicher)[/h1]
+[h2]Tritt unserem Discord bei[/h2]
+[b]► [url=https://discord.gg/69XF65D2sA]Anatolian Workshop Discord[/url][/b]
+Vorschläge, Fehlerberichte und Update-News zu all unseren Mods.
+
 
 [b]Eine sauberere, schärfere, leichtere Karte — von Grund auf neu gebaut für Hearts of Iron IV 1.19.x und alle DLCs bis Thunder at Our Gates.[/b]
 
@@ -26,10 +30,21 @@ Dies ist die gepflegte Fortsetzung der beliebten [url=https://steamcommunity.com
 [tr][th]Multiplayer[/th][td]✔ Ja — keine Prüfsummenänderung, kein Desync[/td][/tr]
 [tr][th]Bestehende Spielstände[/th][td]✔ Jederzeit hinzufügen oder entfernen[/td][/tr]
 [tr][th]Millennium Dawn[/th][td]✔ Getestet mit 2.0.3 — FPS Map [b]nach[/b] Millennium Dawn laden[/td][/tr]
-[tr][th]Total Conversions[/th][td]Funktioniert mit den meisten; Mods, die [i]gfx/FX/maparrow.shader[/i] oder [i]maparrows.txt[/i] ersetzen, sollten [b]nach[/b] dieser geladen werden[/td][/tr]
+[tr][th]Andere Mods[/th][td]Siehe Ladereihenfolge unten[/td][/tr]
 [/table]
 
-[b]Warum Ironman- & MP-sicher?[/b] Die Prüfsumme umfasst nur [i]common/, events/, history/[/i] und Kartendaten. Diese Mod berührt nichts davon — nur Shader, Texturen und Pfeilgrafiken —, daher bleibt deine Prüfsumme identisch zu Vanilla und Errungenschaften bleiben verfügbar (im Spiel geprüft: Prüfsumme mit und ohne FPS Map identisch).
+[h2]🔗 Ladereihenfolge mit anderen Mods[/h2]
+Im Paradox Launcher lädt die [b]weiter unten[/b] stehende Mod später und gewinnt bei Dateien, die beide Mods ändern.
+[table]
+[tr][th]Mod[/th][th]Reihenfolge[/th][th]Hinweise[/th][/tr]
+[tr][td]Millennium Dawn[/td][td]MD oben, FPS Map unten[/td][td]Getestet mit 2.0.3. Calm Water Add-on nicht mit MD nutzen.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816496697]Globe Mod[/url][/td][td]FPS Map oben, Globe unten[/td][td]Der Globus funktioniert vollständig. FPS Map behält alles außer flacher Pfeil-Schattierung, Flussschnee in der Fernansicht und Flachwasser-Tönung. Calm Water Add-on nicht mit Globe nutzen.[/td][/tr]
+[tr][td]Original-FPS Map (Mlecz)[/td][td]✖ Deaktivieren[/td][td]Gleiche Dateien; diese Mod ersetzt sie.[/td][/tr]
+[tr][td]UI-, Einheiten-, Flaggen-, Fokus- und Overhaul-Mods[/td][td]Beliebig[/td][td]Geprüft: Historical Army Insignia und Focus Tree Swapper teilen keine Dateien; Hearts of Iron: 1984 Revived teilt 3 Icons (die untere Mod zeigt ihr Icon).[/td][/tr]
+[tr][td]Andere Shader-/Kartengrafik-Mods[/td][td]Nach Wahl[/td][td]Ändern beide dieselbe Datei, gewinnt die untere; der Rest von FPS Map wirkt weiter.[/td][/tr]
+[/table]
+
+[b]Warum Ironman- & MP-sicher?[/b] Die Prüfsumme umfasst nur [i]common/, events/, history/[/i] und Kartendaten; diese Mod ändert nichts davon (im Spiel geprüft).
 
 [hr][/hr]
 
@@ -42,7 +57,6 @@ Dies ist die gepflegte Fortsetzung der beliebten [url=https://steamcommunity.com
 [*][b]Glattere skalierte Symbole:[/b] 10 Karten-/UI-Symbole haben jetzt wie Vanilla vollständige Mip-Ketten.
 [*][b]Aufgeräumt:[/b] 15 überflüssige Dateien entfernt (8 identisch mit Vanilla, 7 vom Spiel nie geladen).
 [/list]
-Jede geänderte Datei wird aus der [i]aktuellen[/i] Vanilla-Datei mit nur den Änderungen der Mod neu gebaut — nichts Neues von Paradox geht verloren.
 
 [hr][/hr]
 
@@ -67,22 +81,10 @@ Aktiviere ein Add-on zusammen mit dieser Mod; der Launcher lädt es automatisch 
 [b]Steigert sie wirklich meine FPS?[/b]
 Sie spart Pixelarbeit bei Wasser, Flüssen und Pfeilen. Der Gewinn hängt von GPU und Zoomstufe ab; am deutlichsten bei Mittelklasse- und Laptop-GPUs in großen Kriegen mit vielen Planpfeilen. CPU-bedingte Verlangsamung im späten Spiel behebt sie nicht — das ist die Simulation, nicht die Karte.
 
-[b]Ändert sie das Gameplay?[/b]
-Nein. Rein visuell.
-
 [b]Mit anderen UI- / Karten-Mods nutzbar?[/b]
 Ja, solange sie nicht dieselben Dateien ersetzen (siehe oben). Die Mod, die gewinnen soll, weiter unten in die Ladereihenfolge setzen.
 
 [b]Meer- und Landregionen heißen "STRATEGICREGION_49" — ist die Mod kaputt?[/b]
-Nein — FPS Map enthält keinerlei Text. Das passiert, wenn der Karteneditor des Debug-Modus (Nudger) Dateien im Benutzerordner hinterlässt, die jede Mod überschreiben. Öffne [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] und verschiebe den Inhalt der Ordner [i]localisation[/i] und [i]map[/i] woandershin (Kopie behalten). Meist ist es [i]localisation/english/strategic_region_names_l_english.yml[/i] mit Zeilen wie [i]KEY:-1 "..."[/i]; eine übrig gebliebene [i]map/unitstacks.txt[/i] ändert zudem die Prüfsumme und kann Ironman-Errungenschaften blockieren.
-
-[hr][/hr]
-
-[h2]🙏 Credits[/h2]
-[list]
-[*]Original-Mod & Grafik: [b]Mlecz[/b] — [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map[/url]. Das gesamte visuelle Design ist sein Werk; bitte unterstütze den ursprünglichen Ersteller.
-[*]1.19-Update & Pflege: diese Seite.
-[*]Quellcode, Build-Tools und vollständiges technisches Changelog: [url=https://github.com/keremtrgl/ho4-fpsmap]GitHub[/url].
-[/list]
+Nein — FPS Map enthält keinen Text. Reste des Debug-Editors (Nudger) in [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] überschreiben alle Mods: Inhalt der Ordner [i]localisation[/i] und [i]map[/i] woanders hin verschieben.
 
 Fehler gefunden? Hinterlasse einen Kommentar mit Spielversion, DLC-Liste und deiner [i]Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log[/i].

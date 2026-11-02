@@ -1,4 +1,8 @@
 [h1]FPS Map — 1.19 更新版（兼容铁人模式与多人游戏）[/h1]
+[h2]加入我们的 Discord[/h2]
+[b]► [url=https://discord.gg/69XF65D2sA]Anatolian Workshop Discord[/url][/b]
+所有模组的建议、bug 反馈和更新消息。
+
 
 [b]更干净、更清晰、更轻量的地图——为《钢铁雄心4》1.19.x 及截至 Thunder at Our Gates 的所有 DLC 从头重建。[/b]
 
@@ -26,10 +30,21 @@
 [tr][th]多人游戏[/th][td]✔ 是——校验码不变，不会不同步[/td][/tr]
 [tr][th]现有存档[/th][td]✔ 随时可以添加或移除[/td][/tr]
 [tr][th]Millennium Dawn[/th][td]✔ 已用 2.0.3 测试——请将 FPS Map 放在 Millennium Dawn [b]之后[/b]加载[/td][/tr]
-[tr][th]大型模组[/th][td]适用于大多数；替换 [i]gfx/FX/maparrow.shader[/i] 或 [i]maparrows.txt[/i] 的模组应在本模组[b]之后[/b]加载[/td][/tr]
+[tr][th]其他模组[/th][td]见下方加载顺序指南[/td][/tr]
 [/table]
 
-[b]为什么兼容铁人和多人？[/b] 游戏校验码只涵盖 [i]common/、events/、history/[/i] 以及地图数据文件。本模组完全不涉及这些内容——只修改着色器、贴图和箭头视觉效果——因此你的校验码与原版完全一致，成就保持可用（已在游戏中验证：启用与不启用 FPS Map 时校验码完全相同）。
+[h2]🔗 与其他模组的加载顺序[/h2]
+在 Paradox 启动器中，播放集里[b]靠下[/b]的模组后加载，两者都修改的文件以它为准。
+[table]
+[tr][th]模组[/th][th]顺序[/th][th]说明[/th][/tr]
+[tr][td]Millennium Dawn[/td][td]MD 在上，FPS Map 在下[/td][td]已在 2.0.3 测试。不要与 MD 同时使用平静水面附加模组。[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816496697]Globe Mod[/url][/td][td]FPS Map 在上，Globe 在下[/td][td]地球仪效果完全正常。FPS Map 仅失去扁平箭头着色、远景河流积雪和浅海色调。不要与 Globe 同时使用平静水面附加模组。[/td][/tr]
+[tr][td]原版 FPS Map（Mlecz）[/td][td]✖ 请禁用[/td][td]文件相同；本模组取代它。[/td][/tr]
+[tr][td]界面、单位、旗帜、国策及大型模组[/td][td]任意[/td][td]已检查：Historical Army Insignia 和 Focus Tree Swapper 无共同文件；Hearts of Iron: 1984 Revived 有 3 个共同图标（显示靠下模组的图标）。[/td][/tr]
+[tr][td]其他着色器 / 地图画面模组[/td][td]自选[/td][td]若修改同一文件，靠下的模组生效；FPS Map 其余部分照常生效。[/td][/tr]
+[/table]
+
+[b]为什么兼容铁人和多人？[/b] 校验和只涵盖 [i]common/、events/、history/[/i] 和地图数据；本模组都不修改（已在游戏中验证）。
 
 [hr][/hr]
 
@@ -74,15 +89,6 @@
 可以，只要它们不替换相同的文件（见上文）。想让哪个模组生效，就把它放在加载顺序的更下方。
 
 [b]海域和陆地区域显示为“STRATEGICREGION_49”之类的名字——是模组坏了吗？[/b]
-不是——FPS Map 不包含任何文本。这是因为调试模式下的地图编辑器（Nudger）在你的用户文件夹中留下了文件，它们会覆盖所有模组。打开 [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i]，把 [i]localisation[/i] 和 [i]map[/i] 文件夹中的内容移到别处（保留一份副本）。出问题的通常是含有 [i]KEY:-1 "..."[/i] 这类行的 [i]localisation/english/strategic_region_names_l_english.yml[/i]；残留的 [i]map/unitstacks.txt[/i] 还会改变校验码，并可能导致铁人成就无法获得。
-
-[hr][/hr]
-
-[h2]🙏 致谢[/h2]
-[list]
-[*]原版模组与美术：[b]Mlecz[/b] —— [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map[/url]。所有视觉设计均出自他手；请支持原作者。
-[*]1.19 更新与维护：本页面。
-[*]源代码、构建工具和完整技术更新日志：[url=https://github.com/keremtrgl/ho4-fpsmap]GitHub[/url]。
-[/list]
+不是——FPS Map 不含任何文本。[i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] 中调试编辑器（Nudger）的残留会覆盖所有模组：把 [i]localisation[/i] 和 [i]map[/i] 文件夹的内容移到别处。
 
 发现了 bug？请留言并附上你的游戏版本、DLC 列表以及 [i]Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log[/i] 文件。

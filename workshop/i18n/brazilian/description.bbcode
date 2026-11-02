@@ -1,8 +1,12 @@
 [h1]FPS Map — Atualizado para 1.19 (compatível com Ironman e multijogador)[/h1]
+[h2]Entre no nosso Discord[/h2]
+[b]► [url=https://discord.gg/69XF65D2sA]Anatolian Workshop Discord[/url][/b]
+Sugestões, relatos de bugs e novidades de todos os nossos mods.
+
 
 [b]Um mapa mais limpo, nítido e leve — reconstruído do zero para Hearts of Iron IV 1.19.x e todas as DLCs até Thunder at Our Gates.[/b]
 
-Esta é a continuação mantida do querido [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map do Mlecz[/url]. O original parou de ser atualizado enquanto o jogo continuava mudando: shaders desatualizados, tipos de seta ausentes e texturas inválidas causavam travamentos, linhas de QG invisíveis e setas de plano quebradas. Esta versão mantém exatamente o visual que você conhece e conserta tudo por baixo.
+Continuação mantida do querido [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map de Mlecz[/url]. O original parou de ser atualizado — shaders antigos, setas faltando e texturas inválidas causavam crashes, linhas de QG invisíveis e setas de plano quebradas. Esta versão mantém o mesmo visual e corrige tudo por baixo.
 
 [hr][/hr]
 
@@ -26,10 +30,21 @@ Esta é a continuação mantida do querido [url=https://steamcommunity.com/share
 [tr][th]Multijogador[/th][td]✔ Sim — checksum inalterado, sem dessincronização[/td][/tr]
 [tr][th]Saves existentes[/th][td]✔ Adicione ou remova quando quiser[/td][/tr]
 [tr][th]Millennium Dawn[/th][td]✔ Testado com a 2.0.3 — carregue o FPS Map [b]depois[/b] do Millennium Dawn[/td][/tr]
-[tr][th]Conversões totais[/th][td]Funciona com a maioria; mods que substituem [i]gfx/FX/maparrow.shader[/i] ou [i]maparrows.txt[/i] devem carregar [b]depois[/b] deste[/td][/tr]
+[tr][th]Outros mods[/th][td]Veja o guia de ordem de carregamento abaixo[/td][/tr]
 [/table]
 
-[b]Por que é compatível com Ironman e multijogador?[/b] O checksum do jogo cobre apenas [i]common/, events/, history/[/i] e os dados do mapa. Este mod não toca em nenhum deles — só shaders, texturas e visuais das setas —, então seu checksum fica idêntico ao vanilla e as conquistas continuam disponíveis (verificado no jogo: checksum idêntico com e sem o FPS Map).
+[h2]🔗 Ordem de carregamento com outros mods[/h2]
+No Paradox Launcher, o mod mais [b]abaixo[/b] carrega depois e vence nos arquivos que ambos alteram.
+[table]
+[tr][th]Mod[/th][th]Ordem[/th][th]Notas[/th][/tr]
+[tr][td]Millennium Dawn[/td][td]MD acima, FPS Map abaixo[/td][td]Testado com 2.0.3. Não use o add-on de água calma com o MD.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816496697]Globe Mod[/url][/td][td]FPS Map acima, Globe abaixo[/td][td]O globo funciona por completo. O FPS Map mantém tudo, exceto o sombreamento plano das setas, a neve nos rios com zoom distante e o tom de mares rasos. Não use o add-on de água calma com o Globe.[/td][/tr]
+[tr][td]FPS Map original (Mlecz)[/td][td]✖ Desative-o[/td][td]Mesmos arquivos; este mod o substitui.[/td][/tr]
+[tr][td]Mods de interface, unidades, bandeiras, focos e overhauls[/td][td]Qualquer ordem[/td][td]Verificado: Historical Army Insignia e Focus Tree Swapper não compartilham arquivos; Hearts of Iron: 1984 Revived compartilha 3 ícones (aparece o do mod de baixo).[/td][/tr]
+[tr][td]Outros mods de shaders / gráficos do mapa[/td][td]Você escolhe[/td][td]Se ambos alterarem o mesmo arquivo, vence o de baixo; o resto do FPS Map continua valendo.[/td][/tr]
+[/table]
+
+[b]Por que é seguro para Ironman e MP?[/b] O checksum só cobre [i]common/, events/, history/[/i] e dados do mapa; este mod não altera nenhum deles (verificado no jogo).
 
 [hr][/hr]
 
@@ -42,7 +57,6 @@ Esta é a continuação mantida do querido [url=https://steamcommunity.com/share
 [*][b]Ícones redimensionados mais suaves:[/b] 10 ícones de mapa/interface agora têm cadeias de mips completas como no vanilla.
 [*][b]Limpeza:[/b] 15 arquivos obsoletos removidos (8 idênticos ao vanilla, 7 que o jogo nunca carregava).
 [/list]
-Cada arquivo alterado é reconstruído a partir do arquivo vanilla [i]atual[/i] com apenas as edições do mod, então nada de novo da Paradox se perde.
 
 [hr][/hr]
 
@@ -65,24 +79,12 @@ Ative um complemento junto com este mod; o launcher o carrega depois do FPS Map 
 
 [h2]❓ Perguntas frequentes[/h2]
 [b]Vai mesmo aumentar meu FPS?[/b]
-Ele remove parte do trabalho por pixel na água, nos rios e nas setas. O ganho depende da sua GPU e do zoom; aparece mais em GPUs intermediárias e de notebook durante grandes guerras com muitas setas de plano. Não resolve a lentidão de CPU do fim de jogo — isso é a simulação, não o mapa.
-
-[b]Muda a jogabilidade?[/b]
-Não. É puramente visual.
+Remove trabalho por pixel da água, rios e setas; o ganho é maior em GPUs intermediárias e de notebook em grandes guerras. Não resolve lentidão de CPU no fim do jogo — isso é a simulação, não o mapa.
 
 [b]Posso usar com outros mods de interface / mapa?[/b]
 Sim, desde que não substituam os mesmos arquivos (listados acima). Coloque mais abaixo na ordem de carregamento o mod que deve prevalecer.
 
 [b]As regiões aparecem com nomes como "STRATEGICREGION_49" — o mod está quebrado?[/b]
-Não — o FPS Map não tem nenhum texto. Isso acontece quando o editor de mapa do modo debug (Nudger) deixa arquivos na sua pasta de usuário, que sobrescrevem todos os mods. Vá até [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] e mova o conteúdo das pastas [i]localisation[/i] e [i]map[/i] para outro lugar (guarde uma cópia). O arquivo com problema costuma ser [i]localisation/english/strategic_region_names_l_english.yml[/i] com linhas como [i]KEY:-1 "..."[/i]; um [i]map/unitstacks.txt[/i] esquecido também muda o checksum e pode bloquear as conquistas do Ironman.
-
-[hr][/hr]
-
-[h2]🙏 Créditos[/h2]
-[list]
-[*]Mod original e arte: [b]Mlecz[/b] — [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map[/url]. Todo o design visual é obra dele; apoie o criador original.
-[*]Atualização 1.19 e manutenção: esta página.
-[*]Código-fonte, ferramentas de build e changelog técnico completo: [url=https://github.com/keremtrgl/ho4-fpsmap]GitHub[/url].
-[/list]
+Não — o FPS Map não tem texto. Restos do editor debug (Nudger) em [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] sobrescrevem todos os mods: mova o conteúdo das pastas [i]localisation[/i] e [i]map[/i] para outro lugar.
 
 Encontrou um bug? Deixe um comentário com a versão do jogo, sua lista de DLCs e o seu [i]Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log[/i].

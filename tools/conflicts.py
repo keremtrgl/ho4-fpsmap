@@ -10,6 +10,7 @@ loads AFTER the other mod:
   * RESOLUTION   - texture with the same aspect ratio at another resolution
                    (same frames, scaled): safe
   * LAYOUT       - texture with a different aspect ratio: sprite frames break
+  * CUBEMAP      - ours is a valid cube map where vanilla has one: safe
   * EDITED       - their text/shader file has real changes FPS Map would hide
 and also:
   * WIPE    - a replace_path that removes a folder FPS Map relies on
@@ -50,6 +51,11 @@ def dds_size(p):
     return struct.unpack_from('<II', h, 12)[::-1] if h[:4] == b'DDS ' else None
 
 
+def is_cube(p):
+    h = open(p, 'rb').read(128)
+    return h[:4] == b'DDS ' and bool(struct.unpack_from('<I', h, 112)[0] & 0x200)
+
+
 def squash(p):
     return re.sub(r'\s+', '', open(p, encoding='utf-8-sig', errors='replace').read())
 
@@ -61,6 +67,9 @@ def classify(rel, theirs_root, ours_root, their_frames):
         a, b = dds_size(t), dds_size(o)
         if a == b:
             return 'ART'
+        # cube maps have no sprite frames; ours is the cube the game expects
+        if os.path.exists(v) and is_cube(o) and is_cube(v):
+            return 'CUBEMAP'
         if a and b and abs(a[0] / a[1] - b[0] / b[1]) < 0.01:
             return 'RESOLUTION'
         # ours keeps the layout the game's own definitions expect, and they did
@@ -73,7 +82,7 @@ def classify(rel, theirs_root, ours_root, their_frames):
     return 'EDITED'
 
 
-SAFE = {'VANILLA-COPY', 'ART', 'RESOLUTION', 'VANILLA-LAYOUT'}
+SAFE = {'VANILLA-COPY', 'ART', 'RESOLUTION', 'VANILLA-LAYOUT', 'CUBEMAP'}
 
 
 def descriptor(text):

@@ -7,6 +7,7 @@ tools/vanilla_snapshot/
 
 # Machine-specific output
 tools/patch_report.txt
+tools/health_report.txt
 test/
 
 # Private drafts

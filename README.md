@@ -49,6 +49,7 @@ Other tools:
 
 | Command | Purpose |
 |---|---|
+| `python -I tools/health.py [--log FILE]` | quick read-only check: game changed since the build, installed copies match, playset load order, Ironman safety, log lines about FPS Map files (`--log` for a player's error.log) |
 | `python -I tools/lint.py` | release lint: encodings, braces, descriptors, thumbnails, BBCode |
 | `python -I tools/conflicts.py` | compatibility scan against every installed mod → `workshop/compatibility.md` |
 | `python -I tools/userdir_check.py [--fix]` | finds user-folder files that override all mods |

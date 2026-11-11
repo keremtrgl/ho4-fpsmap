@@ -29,7 +29,6 @@ A maintained continuation of the much-loved [url=https://steamcommunity.com/shar
 [tr][th]Ironman[/th][td]✔ Yes — achievements stay enabled[/td][/tr]
 [tr][th]Multiplayer[/th][td]✔ Yes — no checksum change, no desync[/td][/tr]
 [tr][th]Existing saves[/th][td]✔ Add or remove at any time[/td][/tr]
-[tr][th]Millennium Dawn[/th][td]✔ Tested with 2.0.3 — load FPS Map [b]after[/b] Millennium Dawn[/td][/tr]
 [tr][th]Other mods[/th][td]See the load order guide below[/td][/tr]
 [/table]
 
@@ -37,8 +36,10 @@ A maintained continuation of the much-loved [url=https://steamcommunity.com/shar
 In the Paradox Launcher the mod [b]lower[/b] in the playset loads later and wins any file both mods change.
 [table]
 [tr][th]Mod[/th][th]Order[/th][th]Notes[/th][/tr]
-[tr][td]Millennium Dawn[/td][td]MD above, FPS Map below[/td][td]Tested with 2.0.3. Don't use the Calm Water Add-on with MD.[/td][/tr]
-[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816496697]Globe Mod[/url][/td][td]FPS Map above, Globe below[/td][td]The globe works fully. FPS Map keeps everything except its flat arrow shading, far-zoom river snow and shallow-sea tint (Globe needs those shaders). Don't use the Calm Water Add-on with Globe.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2777392649]Millennium Dawn[/url][/td][td]MD above, FPS Map below[/td][td]Tested with 2.0.3.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3826896215]Millennium Dawn +Turkey[/url][/td][td]Any order[/td][td]Checked: shares no files with FPS Map.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3350890356]The Fire Rises[/url][/td][td]Works[/td][td]Tested, no problems.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816496697]Globe Mod[/url][/td][td]✖ Not compatible[/td][td]Unfortunately incompatible: both mods replace the same map shaders, and the map does not turn into a globe when they are combined. Load order does not help.[/td][/tr]
 [tr][td]Original FPS Map (Mlecz)[/td][td]✖ Disable it[/td][td]Same files; this mod replaces it.[/td][/tr]
 [tr][td]UI, unit, flag, focus and overhaul mods[/td][td]Any order[/td][td]Checked: Historical Army Insignia and Focus Tree Swapper share no files; Hearts of Iron: 1984 Revived shares 3 icons (the lower mod's icon art shows).[/td][/tr]
 [tr][td]Other shader / map-graphics mods[/td][td]Your choice[/td][td]If both change the same file, the lower mod wins that file; the rest of FPS Map still applies.[/td][/tr]
@@ -65,7 +66,6 @@ Every changed file is rebuilt from the [i]current[/i] vanilla file with only the
 [table]
 [tr][th]Add-on[/th][th]What it does[/th][th]Millennium Dawn[/th][/tr]
 [tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828959483][b]Colour-blind Add-on[/b][/url][/td][td]Army plan-arrow palette, plus 9 red/green indicator pairs (combat, air/naval superiority, mines, decisions, surrender, production) and the war score bar turned blue/orange — measured to stay distinct under protanopia, deuteranopia and tritanopia.[/td][td]✔ Compatible[/td][/tr]
-[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3829377291][b]Calm Water Add-on[/b][/url][/td][td]Softer sun glare on the sea; water colour, waves, ice and borders unchanged.[/td][td]✖ Don't combine — MD replaces the same water shader[/td][/tr]
 [tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3838002779][b]Vanilla Icons version[/b][/url][/td][td]This mod without its coloured UI icons, for icon mods. Use it [b]instead of[/b] this mod.[/td][td]✔ Compatible[/td][/tr]
 [/table]
 Enable an add-on together with this mod; the launcher loads it after FPS Map automatically.
@@ -81,7 +81,7 @@ Enable an add-on together with this mod; the launcher loads it after FPS Map aut
 
 [h2]❓ FAQ[/h2]
 [b]Will it really raise my FPS?[/b]
-It removes per-pixel work from water, rivers and arrows; the gain is largest on mid-range and laptop GPUs in big wars. It won't fix CPU-bound late-game slowdowns — that is the simulation, not the map.
+No. This is a visual clean-up (calmer water, flat arrows, softer weather), not an FPS booster. It trims a little shader work on water, rivers and arrows, but not enough to expect a noticeable difference. Late-game slowdowns come from the game simulation on the CPU, which no map mod can fix.
 
 [b]Does it change gameplay?[/b]
 No. Purely visual.

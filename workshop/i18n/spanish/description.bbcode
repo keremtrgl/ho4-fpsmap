@@ -29,7 +29,6 @@ Continuación mantenida del querido [url=https://steamcommunity.com/sharedfiles/
 [tr][th]Ironman[/th][td]✔ Sí — los logros siguen activos[/td][/tr]
 [tr][th]Multijugador[/th][td]✔ Sí — sin cambio de checksum, sin desincronización[/td][/tr]
 [tr][th]Partidas existentes[/th][td]✔ Añádelo o quítalo cuando quieras[/td][/tr]
-[tr][th]Millennium Dawn[/th][td]✔ Probado con 2.0.3 — carga FPS Map [b]después[/b] de Millennium Dawn[/td][/tr]
 [tr][th]Otros mods[/th][td]Consulta la guía de orden de carga abajo[/td][/tr]
 [/table]
 
@@ -37,8 +36,10 @@ Continuación mantenida del querido [url=https://steamcommunity.com/sharedfiles/
 En el Paradox Launcher, el mod que está [b]más abajo[/b] carga después y gana en los archivos que cambian ambos.
 [table]
 [tr][th]Mod[/th][th]Orden[/th][th]Notas[/th][/tr]
-[tr][td]Millennium Dawn[/td][td]MD arriba, FPS Map abajo[/td][td]Probado con 2.0.3. No uses el complemento de agua calma con MD.[/td][/tr]
-[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816496697]Globe Mod[/url][/td][td]FPS Map arriba, Globe abajo[/td][td]El globo funciona por completo. FPS Map conserva todo salvo el sombreado plano de flechas, la nieve en ríos con zoom lejano y el tono de mares poco profundos. No uses el complemento de agua calma con Globe.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2777392649]Millennium Dawn[/url][/td][td]MD arriba, FPS Map abajo[/td][td]Probado con 2.0.3.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3826896215]Millennium Dawn +Turkey[/url][/td][td]Cualquier orden[/td][td]Comprobado: no comparte archivos con FPS Map.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3350890356]The Fire Rises[/url][/td][td]Funciona[/td][td]Probado, sin problemas.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816496697]Globe Mod[/url][/td][td]✖ Incompatible[/td][td]Por desgracia es incompatible: los dos mods reemplazan los mismos shaders del mapa y el mapa no se convierte en globo al combinarlos. El orden de carga no lo arregla.[/td][/tr]
 [tr][td]FPS Map original (Mlecz)[/td][td]✖ Desactívalo[/td][td]Mismos archivos; este mod lo reemplaza.[/td][/tr]
 [tr][td]Mods de interfaz, unidades, banderas, focos y overhauls[/td][td]Cualquier orden[/td][td]Comprobado: Historical Army Insignia y Focus Tree Swapper no comparten archivos; Hearts of Iron: 1984 Revived comparte 3 iconos (se ve el del mod de abajo).[/td][/tr]
 [tr][td]Otros mods de shaders / gráficos de mapa[/td][td]A tu elección[/td][td]Si ambos cambian el mismo archivo, gana el de abajo; el resto de FPS Map sigue aplicándose.[/td][/tr]
@@ -64,7 +65,6 @@ En el Paradox Launcher, el mod que está [b]más abajo[/b] carga después y gana
 [table]
 [tr][th]Complemento[/th][th]Qué hace[/th][th]Millennium Dawn[/th][/tr]
 [tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828959483][b]Complemento para daltonismo[/b][/url][/td][td]Flechas de plan y 9 indicadores rojo/verde pasan a azul/naranja; distinguibles con los tres tipos de daltonismo.[/td][td]✔ Compatible[/td][/tr]
-[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3829377291][b]Complemento agua tranquila[/b][/url][/td][td]Reflejo del sol más suave en el mar; color del agua, olas, hielo y fronteras sin cambios.[/td][td]✖ No combinar — MD reemplaza el mismo shader de agua[/td][/tr]
 [tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3838002779][b]Versión iconos vanilla[/b][/url][/td][td]Este mod sin sus iconos de color, para mods de iconos. Úsalo [b]en lugar[/b] de este.[/td][td]✔ Compatible[/td][/tr]
 [/table]
 Activa un complemento junto con este mod; el launcher lo carga después de FPS Map automáticamente.
@@ -80,7 +80,7 @@ Activa un complemento junto con este mod; el launcher lo carga después de FPS M
 
 [h2]❓ Preguntas frecuentes[/h2]
 [b]¿De verdad sube mis FPS?[/b]
-Quita trabajo por píxel del agua, ríos y flechas; la mejora es mayor en GPUs de gama media y portátiles en guerras grandes. No arregla la lentitud de CPU al final de la partida — eso es la simulación, no el mapa.
+No. Es una limpieza visual (agua más tranquila, flechas planas, clima más suave), no un potenciador de FPS. Recorta un poco de trabajo de shaders en agua, ríos y flechas, pero sin una diferencia notable. Los tirones de final de partida vienen de la simulación en la CPU, y ningún mod de mapa puede arreglarlos.
 
 [b]¿Puedo usarlo con otros mods de interfaz / mapa?[/b]
 Sí, salvo que reemplacen los mismos archivos (ver arriba). Pon más abajo en el orden de carga el mod que quieras que prevalezca.

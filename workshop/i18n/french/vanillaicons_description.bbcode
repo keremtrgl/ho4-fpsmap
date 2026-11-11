@@ -1,0 +1,79 @@
+[h1]FPS Map — Icônes vanilla (compatible Ironman & multijoueur)[/h1]
+[h2]Rejoignez notre Discord[/h2]
+[b]► [url=https://discord.gg/69XF65D2sA]Anatolian Workshop Discord[/url][/b]
+Suggestions, bugs et actualités de toutes nos mods.
+
+[b]ℹ Voici [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440]FPS Map[/url] sans ses icônes d'interface colorées.[/b] Tout le reste — eau, frontières, hiver, brouillard, météo, flèches et tous les correctifs — est identique. Les icônes du jeu (ou de votre mod d'icônes) sont utilisées, sans se soucier de l'ordre de chargement. Utilisez celui-ci [b]ou[/b] le FPS Map principal, pas les deux. Les extensions daltonisme et eau calme sont faites pour la version principale.
+
+
+[b]Une carte plus propre, plus nette et plus légère — entièrement reconstruite pour Hearts of Iron IV 1.19.x et tous les DLC jusqu'à Thunder at Our Gates.[/b]
+
+Suite maintenue du célèbre [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map de Mlecz[/url]. L'original n'est plus mis à jour — shaders obsolètes, flèches manquantes et textures invalides causaient crashs, lignes de QG invisibles et flèches de plan cassées. Cette version garde le même rendu et corrige tout en dessous.
+
+[hr][/hr]
+
+[h2]✔ Ce que fait le mod[/h2]
+[list]
+[*][b]Eau sans reflets[/b] — reflets du ciel supprimés ; mers plus sombres et calmes qui font ressortir les côtes.
+[*][b]Frontières nettes et pleines[/b] — les frontières de pays et d'États restent opaques en vue éloignée.
+[*][b]Hiver calme de près[/b] — neige, givre et neige sur les arbres disparaissent en zoomant, la carte ne devient plus un drap blanc. La vue stratégique garde l'hiver vanilla pour voir où il sévit. Pas de neige sur les rivières.
+[*][b]Brouillard de guerre plus calme de près[/b] — le brouillard reste au même endroit et aussi dense qu'en vanilla, mais ses volutes blanches éblouissantes deviennent un gris doux qui dérive plus lentement.
+[*][b]Météo adoucie[/b] — neige, blizzards, pluie et tempêtes de sable à environ un tiers de l'intensité vanilla, les éclairs luisent au lieu de stroboscoper, la banquise éblouit moins. Sons inchangés.
+[*][b]Flèches de carte nettes et plates[/b] — flèches de mouvement et de plan sans éclairage, désaturées et plus fines ; fini les taches néon sur le front.
+[*][b]Shaders allégés[/b] — les pixels de flèche entièrement masqués sont éliminés tôt et les passes d'éclairage et de brouillard des flèches et symboles sont sautées.
+[/list]
+
+[h2]✔ Compatibilité[/h2]
+[table]
+[tr][th]Version du jeu[/th][td]1.19.x (testé sur 1.19.4.1)[/td][/tr]
+[tr][th]DLC[/th][td]Compatible avec tous les DLC jusqu'à Thunder at Our Gates — testé en jeu avec tous les DLC activés.[/td][/tr]
+[tr][th]Ironman[/th][td]✔ Oui — les succès restent actifs[/td][/tr]
+[tr][th]Multijoueur[/th][td]✔ Oui — checksum inchangé, pas de désynchronisation[/td][/tr]
+[tr][th]Parties existantes[/th][td]✔ Ajout ou retrait à tout moment[/td][/tr]
+[tr][th]Millennium Dawn[/th][td]✔ Testé avec 2.0.3 — chargez FPS Map [b]après[/b] Millennium Dawn[/td][/tr]
+[tr][th]Autres mods[/th][td]Voir le guide d'ordre de chargement ci-dessous[/td][/tr]
+[/table]
+
+[h2]🔗 Ordre de chargement avec d'autres mods[/h2]
+Dans le Paradox Launcher, le mod placé [b]plus bas[/b] se charge après et l'emporte sur les fichiers modifiés par les deux.
+[table]
+[tr][th]Mod[/th][th]Ordre[/th][th]Remarques[/th][/tr]
+[tr][td]Millennium Dawn[/td][td]MD au-dessus, FPS Map en dessous[/td][td]Testé avec 2.0.3. N'utilisez pas l'extension eau calme avec MD.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816496697]Globe Mod[/url][/td][td]FPS Map au-dessus, Globe en dessous[/td][td]Le globe fonctionne pleinement. FPS Map garde tout sauf l'ombrage plat des flèches, la neige des rivières en vue lointaine et la teinte des mers peu profondes. N'utilisez pas l'extension eau calme avec Globe.[/td][/tr]
+[tr][td]FPS Map original (Mlecz)[/td][td]✖ Désactivez-le[/td][td]Mêmes fichiers ; ce mod le remplace.[/td][/tr]
+[tr][td]Mods d'interface, d'unités, de drapeaux, de focus et overhauls[/td][td]Peu importe[/td][td]Vérifié : Historical Army Insignia et Focus Tree Swapper ne partagent aucun fichier ; Hearts of Iron: 1984 Revived partage 3 icônes (l'icône du mod du bas s'affiche).[/td][/tr]
+[tr][td]Autres mods de shaders / graphismes de carte[/td][td]Au choix[/td][td]Si les deux modifient le même fichier, celui du bas l'emporte ; le reste de FPS Map s'applique.[/td][/tr]
+[/table]
+
+[b]Pourquoi compatible Ironman & MP ?[/b] Le checksum ne couvre que [i]common/, events/, history/[/i] et les données de carte ; ce mod n'en modifie aucun (vérifié en jeu).
+
+[hr][/hr]
+
+[h2]🛠 Ce qui a été corrigé par rapport à l'original[/h2]
+[list]
+[*][b]Plantage / flèches cassées corrigés :[/b] le shader des flèches était une copie obsolète sans trois effets désormais exigés par le moteur (flèches de raid, flèches de plan translucides). Reconstruit depuis le shader 1.19 avec le style du mod.
+[*][b]Lignes de QG / généraux restaurées :[/b] 12 types de flèches et symboles ajoutés par les patchs récents (lignes de front des généraux déployés, portée des capacités de commandant, flèches de raid) manquaient et ne s'affichaient pas.
+[*][b]Texture de reflet invalide remplacée :[/b] le reflet eau/ciel était une image plate là où le jeu attend une cube map. C'est maintenant une vraie cube map (noire) — même rendu, sans erreurs.
+[*][b]Nettoyage :[/b] 15 fichiers obsolètes supprimés (8 identiques au vanilla, 7 jamais chargés par le jeu).
+[/list]
+
+[hr][/hr]
+
+[h2]📦 Installation[/h2]
+[olist]
+[*]Abonnez-vous.
+[*]Dans le Paradox Launcher, ajoutez [b]FPS Map - Vanilla Icons (Ironman & MP Safe)[/b] à votre playset.
+[*][b]Désactivez la FPS Map originale[/b] si vous l'avez — les deux remplacent les mêmes fichiers.
+[/olist]
+
+[h2]❓ FAQ[/h2]
+[b]Mes FPS vont-ils vraiment augmenter ?[/b]
+Il retire du travail par pixel sur l'eau, les rivières et les flèches ; le gain est plus net sur les GPU milieu de gamme et portables en grande guerre. Il ne corrige pas les ralentissements CPU de fin de partie — c'est la simulation, pas la carte.
+
+[b]Compatible avec d'autres mods d'interface / de carte ?[/b]
+Oui, sauf s'ils remplacent les mêmes fichiers (voir ci-dessus). Placez plus bas dans l'ordre de chargement le mod qui doit l'emporter.
+
+[b]Les régions affichent des noms comme « STRATEGICREGION_49 » — le mod est cassé ?[/b]
+Non — FPS Map ne contient aucun texte. Des restes de l'éditeur debug (Nudger) dans [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] écrasent tous les mods : déplacez le contenu des dossiers [i]localisation[/i] et [i]map[/i] ailleurs.
+
+Un bug ? Laissez un commentaire avec votre version du jeu, votre liste de DLC et votre [i]Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log[/i].

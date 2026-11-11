@@ -10,6 +10,7 @@ shader effects, constant buffer fields, arrow/symbol types) are never lost.
 Outputs:
     <output dir>              FPS Map
     <output dir>_colorblind   optional sub-mod: colour-blind army arrow palette
+    <output dir>_vanillaicons FPS Map without its UI icon art (standalone)
     tools/vanilla_manifest.json   hashes of every vanilla file the build read,
                                   used by patch_check.py after a game patch
 """
@@ -23,15 +24,18 @@ import colorblind
 
 OUT_CB = OUT.rstrip('/\\') + '_colorblind'
 OUT_WATER = OUT.rstrip('/\\') + '_calmwater'
+OUT_VI = OUT.rstrip('/\\') + '_vanillaicons'
 # Descriptor names ARE the Workshop titles: the launcher overwrites the title
 # with this name on every upload, and add-ons depend on it by name.
 # ASCII only: some tools read descriptors as ANSI and would mangle an en dash.
 NAME = 'FPS Map - Updated for 1.19 (Ironman & MP Safe)'
 NAME_CB = 'FPS Map - Colour-blind Add-on'
 NAME_WATER = 'FPS Map - Calm Water Add-on'
+NAME_VI = 'FPS Map - Vanilla Icons (Ironman & MP Safe)'
 WORKSHOP_ID = '3828926440'
 WORKSHOP_ID_CB = '3828959483'
 WORKSHOP_ID_WATER = '3829377291'
+WORKSHOP_ID_VI = ''  # set after the first upload
 REVISION = 6 # bump for every Workshop update on the same game version
 
 # Files dropped from the build:
@@ -387,6 +391,26 @@ images = os.path.join(HERE, '..', 'workshop', 'images')
 thumb = os.path.join(images, 'thumbnail.png')
 shutil.copy2(thumb if os.path.exists(thumb) else os.path.join(SRC, 'thumbnail.png'),
              os.path.join(OUT, 'thumbnail.png'))
+
+# ------------------------------------------------- vanilla icons version
+# Players combining FPS Map with icon mods asked for one without its UI art.
+# An add-on can't remove files, so this is a full standalone copy of FPS Map
+# minus every interface/text icon: the game (or another mod) supplies them.
+UI_ART = ('gfx/interface', 'gfx/texticons')
+if os.path.exists(OUT_VI):
+    shutil.rmtree(OUT_VI)
+shutil.copytree(OUT, OUT_VI)
+for d in UI_ART:
+    shutil.rmtree(os.path.join(OUT_VI, d))
+with open(os.path.join(OUT_VI, 'descriptor.mod'), 'w', encoding='utf-8', newline='') as f:
+    f.write(f'version="{ver}-{REVISION}"\n'
+            'tags={\n\t"Map"\n\t"Graphics"\n}\n'
+            f'name="{NAME_VI}"\n'
+            f'supported_version="{major_minor}.*"\n'
+            + (f'remote_file_id="{WORKSHOP_ID_VI}"\n' if WORKSHOP_ID_VI else ''))
+vi_thumb = os.path.join(images, 'thumbnail_vanillaicons.png')
+if os.path.exists(vi_thumb):
+    shutil.copy2(vi_thumb, os.path.join(OUT_VI, 'thumbnail.png'))
 
 # ------------------------------------------------- colour-blind sub-mod
 # Only maparrows.txt differs from FPS Map, so the sub-mod ships that one file

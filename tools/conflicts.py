@@ -25,7 +25,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 # Each of our mods is checked on its own, so a conflict names the culprit.
 OUR_MODS = [('FPS Map', 'fps_map'), ('Colour-blind Add-on', 'fps_map_colorblind'),
-            ('Calm Water Add-on', 'fps_map_calmwater')]
+            ('Calm Water Add-on', 'fps_map_calmwater'), ('Vanilla Icons', 'fps_map_vanillaicons')]
 OURS = [os.path.join(ROOT, folder) for _, folder in OUR_MODS]
 # Conflicts we document instead of fixing (description says "don't combine").
 KNOWN = {('fps_map_calmwater', 'Millennium Dawn')}

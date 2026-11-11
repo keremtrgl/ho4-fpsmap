@@ -37,7 +37,7 @@ if '--userdir' in args:
 WORKSHOP = os.path.join(os.path.dirname(os.path.dirname(GAME)), 'workshop', 'content', '394360')
 
 OUR_MODS = [('FPS Map', 'fps_map'), ('Colour-blind Add-on', 'fps_map_colorblind'),
-            ('Calm Water Add-on', 'fps_map_calmwater')]
+            ('Calm Water Add-on', 'fps_map_calmwater'), ('Vanilla Icons', 'fps_map_vanillaicons')]
 MLECZ_ORIGINAL = '2404689961'
 # Other mods we know, keyed by Workshop id: (name, FPS Map must load 'after'
 # or 'before' them, why). The engine lets the mod loaded LAST win a file.
@@ -145,6 +145,10 @@ for entry in enabled:
 names = [n for n, *_ in playset]
 say('OK', 'PLAYSET', f'last launched playset: {len(playset)} mods' + (f' ({", ".join(names[:8])})' if names else ''))
 pos = {f: i for i, (_, _, _, f) in enumerate(playset) if f}
+if 'fps_map' in pos and 'fps_map_vanillaicons' in pos:
+    say('FAIL', 'PLAYSET', 'FPS Map and FPS Map - Vanilla Icons are both enabled: keep only one')
+elif 'fps_map_vanillaicons' in pos:
+    pos['fps_map'] = pos['fps_map_vanillaicons']  # same mod minus UI icons
 if 'fps_map' not in pos:
     if any(f for *_, f in playset):
         say('FAIL', 'PLAYSET', 'an FPS Map add-on is enabled without the main FPS Map mod')

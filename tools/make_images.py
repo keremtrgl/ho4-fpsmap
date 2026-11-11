@@ -134,6 +134,16 @@ d.rounded_rectangle((110, 440, 402, 480), 8, fill=(*INK, 230), outline=(*GOLD, 2
 d.text((256, 460), 'SOFTER SUN GLARE', font=font(22), fill=GOLD, anchor='mm')
 cw.convert('RGB').save(os.path.join(OUT, 'thumbnail_calmwater.png'), optimize=True)
 
+# Vanilla Icons version: the main plate with its own label.
+vi = Image.alpha_composite(src.convert('RGBA'), ov)
+d = ImageDraw.Draw(vi)
+d.rectangle((0, 0, 511, 511), outline=(*GOLD, 255), width=6)
+d.text((256, 340), 'FPS MAP', font=font(96), fill=GOLD, anchor='mm', stroke_width=3, stroke_fill=INK)
+d.text((256, 405), 'VANILLA ICONS', font=font(34), fill=WHITE, anchor='mm', stroke_width=2, stroke_fill=INK)
+d.rounded_rectangle((120, 440, 392, 480), 8, fill=(*INK, 230), outline=(*GOLD, 255), width=2)
+d.text((256, 460), 'IRONMAN  ·  MP SAFE', font=font(22), fill=GOLD, anchor='mm')
+vi.convert('RGB').save(os.path.join(OUT, 'thumbnail_vanillaicons.png'), optimize=True)
+
 for f in sorted(os.listdir(OUT)):
     p = os.path.join(OUT, f)
     print(f'{os.path.getsize(p) // 1024:6d} KB  {f}  {Image.open(p).size}')

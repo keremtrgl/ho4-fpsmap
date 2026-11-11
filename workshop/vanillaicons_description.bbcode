@@ -1,0 +1,83 @@
+[h1]FPS Map — Vanilla Icons (Ironman & Multiplayer Safe)[/h1]
+[h2]Join our Discord[/h2]
+[b]► [url=https://discord.gg/69XF65D2sA]Anatolian Workshop Discord[/url][/b]
+Suggestions, bug reports and update news for all of our mods.
+
+[b]ℹ This is [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440]FPS Map[/url] without its coloured UI icons.[/b] Everything else — water, borders, winter, fog, weather, arrows and every fix — is identical. The game's own icons (or your icon mod's) are used, so no load order juggling. Use this [b]or[/b] the main FPS Map, not both. The Colour-blind and Calm Water add-ons are made for the main version.
+
+
+[b]A cleaner, crisper, lighter map — rebuilt from the ground up for Hearts of Iron IV 1.19.x and every DLC up to Thunder at Our Gates.[/b]
+
+A maintained continuation of the much-loved [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961]FPS Map by Mlecz[/url]. The original stopped receiving updates — outdated shaders, missing arrow types and invalid textures caused crashes, invisible HQ lines and broken plan arrows. This version keeps the exact look you know and fixes everything underneath.
+
+[hr][/hr]
+
+[h2]✔ What it does[/h2]
+[list]
+[*][b]Non-reflective water[/b] — sky reflections removed; darker, calmer seas that make coastlines pop.
+[*][b]Sharper, solid borders[/b] — country and state borders stay fully opaque when zoomed out.
+[*][b]Calm close-up winter[/b] — snow, frost and snow on trees fade out as you zoom in, so the map no longer turns into a white sheet. The strategic view keeps vanilla winter, so you can still see where winter is. Rivers stay snow-free.
+[*][b]Calmer fog of war up close[/b] — fog stays exactly where and as strong as in vanilla, but its glaring white wisps are a soft grey that drifts slower.
+[*][b]Softer weather[/b] — snowfall, blizzards, rain and sandstorms at about a third of vanilla intensity, lightning glows instead of strobing, sea ice glares less. Weather sounds are unchanged.
+[*][b]Clean, flat map arrows[/b] — unlit, unsaturated movement and battle-plan arrows with thinner bodies; no more neon blobs over the frontline.
+[*][b]Lighter shader work[/b] — fully masked arrow pixels are discarded early and arrow/symbol lighting & fog passes are skipped.
+[/list]
+
+[h2]✔ Compatibility[/h2]
+[table]
+[tr][th]Game version[/th][td]1.19.x (tested on 1.19.4.1)[/td][/tr]
+[tr][th]DLC[/th][td]Compatible with all DLC up to Thunder at Our Gates — every DLC arrow, symbol and effect definition is kept (checked file by file) and the mod was tested in game with every DLC enabled.[/td][/tr]
+[tr][th]Ironman[/th][td]✔ Yes — achievements stay enabled[/td][/tr]
+[tr][th]Multiplayer[/th][td]✔ Yes — no checksum change, no desync[/td][/tr]
+[tr][th]Existing saves[/th][td]✔ Add or remove at any time[/td][/tr]
+[tr][th]Millennium Dawn[/th][td]✔ Tested with 2.0.3 — load FPS Map [b]after[/b] Millennium Dawn[/td][/tr]
+[tr][th]Other mods[/th][td]See the load order guide below[/td][/tr]
+[/table]
+
+[h2]🔗 Load order with other mods[/h2]
+In the Paradox Launcher the mod [b]lower[/b] in the playset loads later and wins any file both mods change.
+[table]
+[tr][th]Mod[/th][th]Order[/th][th]Notes[/th][/tr]
+[tr][td]Millennium Dawn[/td][td]MD above, FPS Map below[/td][td]Tested with 2.0.3. Don't use the Calm Water Add-on with MD.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816496697]Globe Mod[/url][/td][td]FPS Map above, Globe below[/td][td]The globe works fully. FPS Map keeps everything except its flat arrow shading, far-zoom river snow and shallow-sea tint (Globe needs those shaders). Don't use the Calm Water Add-on with Globe.[/td][/tr]
+[tr][td]Original FPS Map (Mlecz)[/td][td]✖ Disable it[/td][td]Same files; this mod replaces it.[/td][/tr]
+[tr][td]UI, unit, flag, focus and overhaul mods[/td][td]Any order[/td][td]Checked: Historical Army Insignia and Focus Tree Swapper share no files; Hearts of Iron: 1984 Revived shares 3 icons (the lower mod's icon art shows).[/td][/tr]
+[tr][td]Other shader / map-graphics mods[/td][td]Your choice[/td][td]If both change the same file, the lower mod wins that file; the rest of FPS Map still applies.[/td][/tr]
+[/table]
+
+[b]Why is it Ironman & MP safe?[/b] The game checksum only covers [i]common/, events/, history/[/i] and map data files. This mod touches none of them — only shaders, textures and arrow visuals — so your checksum stays identical to vanilla (verified in game).
+
+[hr][/hr]
+
+[h2]🛠 What was fixed compared to the original[/h2]
+[list]
+[*][b]Crash / broken arrows fixed:[/b] the map-arrow shader was an outdated copy missing three effects the engine now requires (raid arrows, see-through plan arrows). Rebuilt from the 1.19 shader with the mod's style re-applied.
+[*][b]HQ / general connection lines restored:[/b] 12 arrow and symbol types added in recent patches (deployed-general front lines, commander ability range, raid arrows) were missing and simply did not draw.
+[*][b]Invalid reflection texture replaced:[/b] the water/sky reflection was a flat image where the game expects a cube map. Now a proper (black) cube map — same look, no rendering errors.
+[*][b]Cleanup:[/b] 15 obsolete or unused files removed.
+[/list]
+Every changed file is rebuilt from the [i]current[/i] vanilla file with only the mod's own edits applied, so nothing new from Paradox is lost.
+
+[hr][/hr]
+
+[h2]📦 Installation[/h2]
+[olist]
+[*]Subscribe.
+[*]In the Paradox Launcher, add [b]FPS Map - Vanilla Icons (Ironman & MP Safe)[/b] to your playset.
+[*][b]Disable the original FPS Map[/b] if you have it — both replace the same files.
+[/olist]
+
+[h2]❓ FAQ[/h2]
+[b]Will it really raise my FPS?[/b]
+It removes per-pixel work from water, rivers and arrows; the gain is largest on mid-range and laptop GPUs in big wars. It won't fix CPU-bound late-game slowdowns — that is the simulation, not the map.
+
+[b]Does it change gameplay?[/b]
+No. Purely visual.
+
+[b]Can I use it with other UI / map mods?[/b]
+Yes — see the load order guide above. Put the mod you want to win lower in the playset.
+
+[b]Sea and land regions show names like "STRATEGICREGION_49" — is this mod broken?[/b]
+No — FPS Map ships no text. The debug map editor (Nudger) left files in your user folder that override every mod. Move the contents of the [i]localisation[/i] and [i]map[/i] folders in [i]Documents/Paradox Interactive/Hearts of Iron IV/[/i] somewhere else (keep a copy). A leftover [i]map/unitstacks.txt[/i] there also changes your checksum and blocks Ironman achievements.
+
+Found a bug? Leave a comment with your game version, DLC list and your [i]Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log[/i].

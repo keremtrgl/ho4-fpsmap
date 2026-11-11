@@ -110,6 +110,8 @@ if ok:
     ok = run(os.path.join(HERE, 'verify.py'), OUT_CB, GAME, '--addon') and ok
     say('Verifying fps_map_calmwater ...')
     ok = run(os.path.join(HERE, 'verify.py'), OUT + '_calmwater', GAME, '--addon') and ok
+    say('Verifying fps_map_vanillaicons ...')
+    ok = run(os.path.join(HERE, 'verify.py'), OUT + '_vanillaicons', GAME) and ok
     w = open(os.path.join(OUT + '_calmwater', 'gfx/FX/pdxwater.shader'), encoding='utf-8-sig').read().splitlines()
     v = open(os.path.join(GAME, 'gfx/FX/pdxwater.shader'), encoding='utf-8-sig').read().splitlines()
     extra = [l for l in w if l not in v]
@@ -132,7 +134,8 @@ if ok:
 # ------------------------------------------------------------ 4. install
 if ok and '--install' in sys.argv:
     mods = os.path.join(os.path.expanduser('~'), 'Documents', 'Paradox Interactive', 'Hearts of Iron IV', 'mod')
-    for src, folder in ((OUT, 'fps_map_updated'), (OUT_CB, 'fps_map_colorblind'), (OUT + '_calmwater', 'fps_map_calmwater')):
+    for src, folder in ((OUT, 'fps_map_updated'), (OUT_CB, 'fps_map_colorblind'), (OUT + '_calmwater', 'fps_map_calmwater'),
+                        (OUT + '_vanillaicons', 'fps_map_vanillaicons')):
         dst = os.path.join(mods, folder)
         shutil.rmtree(dst, ignore_errors=True)
         shutil.copytree(src, dst)

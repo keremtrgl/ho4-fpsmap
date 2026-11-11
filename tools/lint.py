@@ -19,7 +19,8 @@ GAME = r'C:\Program Files (x86)\Steam\steamapps\common\Hearts of Iron IV'
 if '--game' in sys.argv:
     GAME = sys.argv[sys.argv.index('--game') + 1]
 DOCS = os.path.join(os.path.expanduser('~'), 'Documents', 'Paradox Interactive', 'Hearts of Iron IV', 'mod')
-MODS = {'fps_map': 'fps_map_updated', 'fps_map_colorblind': 'fps_map_colorblind', 'fps_map_calmwater': 'fps_map_calmwater'}
+MODS = {'fps_map': 'fps_map_updated', 'fps_map_colorblind': 'fps_map_colorblind', 'fps_map_calmwater': 'fps_map_calmwater',
+        'fps_map_vanillaicons': 'fps_map_vanillaicons'}
 TEXT = ('.txt', '.fxh', '.shader', '.asset', '.mod', '.gfx', '.gui', '.lua')
 problems, notes = [], []
 
@@ -66,7 +67,7 @@ for src, installed in MODS.items():
         problems.append(f'{src}/descriptor.mod: non-ASCII characters (launcher may mangle the title)')
     main_name = re.search(r'^name="([^"]+)"', open(os.path.join(ROOT, 'fps_map', 'descriptor.mod'), encoding='utf-8').read(), re.M).group(1)
     dep = re.search(r'dependencies\s*=\s*\{\s*"([^"]+)"', desc)
-    if src != 'fps_map' and (not dep or dep.group(1) != main_name):
+    if src not in ('fps_map', 'fps_map_vanillaicons') and (not dep or dep.group(1) != main_name):
         problems.append(f'{src}/descriptor.mod: dependency must be exactly "{main_name}"')
     if f'version="{game_ver}-{revision}"' not in desc:
         problems.append(f'{src}/descriptor.mod: version is not {game_ver}-{revision}')

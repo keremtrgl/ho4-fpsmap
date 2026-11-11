@@ -5,3 +5,4 @@ tags={
 }
 name="FPS Map - Vanilla Icons (Ironman & MP Safe)"
 supported_version="1.19.*"
+remote_file_id="3838002779"

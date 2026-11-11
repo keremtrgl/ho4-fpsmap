@@ -35,7 +35,7 @@ NAME_VI = 'FPS Map - Vanilla Icons (Ironman & MP Safe)'
 WORKSHOP_ID = '3828926440'
 WORKSHOP_ID_CB = '3828959483'
 WORKSHOP_ID_WATER = '3829377291'
-WORKSHOP_ID_VI = ''  # set after the first upload
+WORKSHOP_ID_VI = '3838002779'
 REVISION = 6 # bump for every Workshop update on the same game version
 
 # Files dropped from the build:

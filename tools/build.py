@@ -28,7 +28,7 @@ OUT_VI = OUT.rstrip('/\\') + '_vanillaicons'
 # Descriptor names ARE the Workshop titles: the launcher overwrites the title
 # with this name on every upload, and add-ons depend on it by name.
 # ASCII only: some tools read descriptors as ANSI and would mangle an en dash.
-NAME = 'FPS Map - Updated for 1.19 (Ironman & MP Safe)'
+NAME = 'FPS Map - Updated for 1.20 (Ironman & MP Safe)'
 NAME_CB = 'FPS Map - Colour-blind Add-on'
 NAME_WATER = 'FPS Map - Calm Water Add-on'
 NAME_VI = 'FPS Map - Vanilla Icons (Ironman & MP Safe)'

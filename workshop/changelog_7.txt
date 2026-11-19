@@ -1,0 +1,4 @@
+Updated for Hearts of Iron IV 1.20.
+- Checked every shader, arrow type and UI sprite against 1.20: nothing FPS Map relies on changed, and it was tested in game with no errors.
+- Now marked as supported on 1.20.* (no more outdated-version warning in the launcher).
+- Still Ironman & multiplayer safe; no gameplay files.

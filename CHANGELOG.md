@@ -1,8 +1,16 @@
 # FPS Map (Updated)
 
-Rebuilt against Hearts of Iron IV 1.19.4, compatible with every DLC up to Thunder at Our Gates.
+Rebuilt against Hearts of Iron IV 1.20.0, compatible with every DLC up to Thunder at Our Gates.
 After a game patch: `python -I tools/patch_check.py --install`
 Compatibility report: `python -I tools/conflicts.py`
+
+## 1.20.0.0-6 — Hearts of Iron IV 1.20
+- Checked against 1.20.0.0: none of the 166 vanilla files the build reads changed (shaders,
+  arrow and symbol types, UI sprites), and none of the 13 changed `interface/*.gfx|gui` files
+  reference a texture FPS Map ships. Tested in game: no shader or texture errors.
+- Renamed to "FPS Map - Updated for 1.20 (Ironman & MP Safe)"; add-ons depend on the new name.
+  `supported_version` is now `1.20.*`, so the launcher no longer flags the mods as outdated.
+- `health.py` no longer warns about system.log's "Active Mod:" playset lines.
 
 ## 1.19.4.1-6 — calmer water with high-quality shaders
 All three edits only touch code paths that run with "High quality shaders" on; the low-quality

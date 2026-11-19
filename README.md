@@ -1,11 +1,11 @@
-# FPS Map — Updated for Hearts of Iron IV 1.19
+# FPS Map — Updated for Hearts of Iron IV 1.20
 
 A maintained continuation of [FPS Map by Mlecz](https://steamcommunity.com/sharedfiles/filedetails/?id=2404689961),
-rebuilt for Hearts of Iron IV 1.19.x and every DLC. Ironman and multiplayer safe.
+rebuilt for Hearts of Iron IV 1.20.x and every DLC. Ironman and multiplayer safe.
 
 | Steam Workshop | |
 |---|---|
-| [FPS Map - Updated for 1.19 (Ironman & MP Safe)](https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440) | main mod |
+| [FPS Map - Updated for 1.20 (Ironman & MP Safe)](https://steamcommunity.com/sharedfiles/filedetails/?id=3828926440) | main mod |
 | [FPS Map - Colour-blind Add-on](https://steamcommunity.com/sharedfiles/filedetails/?id=3828959483) | optional |
 | [FPS Map - Calm Water Add-on](https://steamcommunity.com/sharedfiles/filedetails/?id=3829377291) | optional, not with Millennium Dawn |
 
@@ -61,6 +61,6 @@ files used for patch diffs) is not published; the first `patch_check.py` run rec
 ## Credits
 
 - Original mod, art and visual design: **Mlecz**. All visual design is his work.
-- 1.19 update and maintenance: [keremtrgl](https://github.com/keremtrgl).
+- 1.20 update and maintenance: [keremtrgl](https://github.com/keremtrgl).
 
 Hearts of Iron IV is a trademark of Paradox Interactive. This project is not affiliated with Paradox.

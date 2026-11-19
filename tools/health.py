@@ -200,6 +200,8 @@ for log in logs:
     for line in open(log, encoding='utf-8', errors='replace'):
         if pattern.search(line):
             msg = re.sub(r'^\[[\d:]+\]\[[^\]]*\]:\s*', '', line.strip())
+            if msg.startswith('Active Mod:'):  # system.log lists the playset, not a problem
+                continue
             hits[msg] = hits.get(msg, 0) + 1
     label = log if log in EXTRA_LOGS else os.path.basename(log)
     if hits:

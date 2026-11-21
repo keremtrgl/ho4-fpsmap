@@ -43,7 +43,9 @@ python -I tools/patch_check.py --install
 2. rebuilds all three mods from the new game files,
 3. verifies them (checksum safety, texture layouts, every vanilla arrow/shader definition kept),
 4. checks the user folder for overrides (for example Nudger leftovers),
-5. with `--install`, copies the mods to `Documents/Paradox Interactive/Hearts of Iron IV/mod`.
+5. with `--install`, copies the mods to `Documents/Paradox Interactive/Hearts of Iron IV/mod`,
+   skipping any you are subscribed to, because a local copy with the same Workshop ID can stop
+   the game loading the subscribed mod. Add `--for-upload` to copy those too, and remove them after uploading.
 
 Other tools:
 

@@ -1,6 +1,6 @@
 """One command after a Hearts of Iron IV patch.
 
-    python -I tools/patch_check.py [--game DIR] [--install]
+    python -I tools/patch_check.py [--game DIR] [--install [--for-upload]]
 
 1. Compares every vanilla file FPS Map is built from (tools/vanilla_manifest.json)
    with the installed game and reports what the patch changed: text diffs as
@@ -10,7 +10,9 @@
    applies to the new vanilla file.
 3. Verifies both outputs (checksum safety, texture layouts, every vanilla
    arrow/shader definition kept).
-4. --install copies both mods into Documents/Paradox Interactive/Hearts of Iron IV/mod.
+4. --install copies the mods into Documents/Paradox Interactive/Hearts of Iron IV/mod,
+   skipping any you are subscribed to. Add --for-upload to copy those too (the
+   launcher uploads from the local copy); remove them again after uploading.
 
 The report is also written to tools/patch_report.txt. Exit code 0 means the
 mod is ready to upload.
@@ -137,9 +139,17 @@ if ok and '--install' in sys.argv:
     for src, folder in ((OUT, 'fps_map_updated'), (OUT_CB, 'fps_map_colorblind'), (OUT + '_calmwater', 'fps_map_calmwater'),
                         (OUT + '_vanillaicons', 'fps_map_vanillaicons')):
         dst = os.path.join(mods, folder)
+        desc = open(os.path.join(src, 'descriptor.mod'), encoding='utf-8').read()
+        # A local copy with the same remote_file_id as a subscribed mod can stop
+        # the game loading the Workshop one (Active Mod Count: 0).
+        rid = re.search(r'remote_file_id="(\d+)"', desc)
+        if rid and '--for-upload' not in sys.argv and os.path.exists(os.path.join(mods, f'ugc_{rid.group(1)}.mod')):
+            say(f'Skipped {folder}: subscribed on the Workshop ({rid.group(1)}); --for-upload installs it anyway')
+            if os.path.exists(dst + '.mod'):
+                say(f'    WARNING: local duplicate {folder}.mod exists, remove it unless you are uploading')
+            continue
         shutil.rmtree(dst, ignore_errors=True)
         shutil.copytree(src, dst)
-        desc = open(os.path.join(src, 'descriptor.mod'), encoding='utf-8').read()
         with open(os.path.join(mods, folder + '.mod'), 'w', encoding='utf-8', newline='') as f:
             f.write(desc + f'path="{dst.replace(os.sep, "/")}"\n')
         say(f'Installed {folder}')
